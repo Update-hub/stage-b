@@ -20,7 +20,6 @@ issue作成、仕様確認|10/24
 - Shoji - リードエンジニア
 - Shibata
 - iwamotoW
-- Kumura
 
 ## Docs
 
