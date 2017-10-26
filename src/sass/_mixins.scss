@@ -5,7 +5,7 @@
 }
 
 @mixin pc {
-  @media (min-width: 48em) {
+  @media (min-width: #{$desktop-width}) {
     @content;
   }
 }
