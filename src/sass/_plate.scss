@@ -1,0 +1,33 @@
+.plate{
+  background-color:rgba(0,0,0,0.6);
+  width:100%;
+  
+  @include pc(){
+    width:auto;
+    display: inline-block;
+    
+  }
+}
+
+.bk-plate--hdg{
+  color:#FFFFFF;
+  font-size:16px;
+  line-height:44px;
+  padding:0px 16px;
+  @include pc(){
+    font-size:34px;
+    padding:8px 16px 24px 16px;
+  }    
+}
+
+.bk-plate--sentence{
+  color:#FFFFFF;
+  font-size: 12px;
+  line-height: 24px;
+  padding:0px 16px 8px 16px;
+
+  @include pc(){
+    padding:0px 16px 24px 16px;
+    font-size: 14px;
+  }
+}
