@@ -1,18 +1,17 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 256px;
-  max-height: 251px;
-  height: auto;
+  max-width: 256px;
   background-color: #fff;
   border-radius: 3px;
   box-shadow: $shadow-md;
   @include pc() {
     height: 251px;
+    max-width: 312px;
   }
 
   .card__img {
-    height: 140px;
+    min-height: 140px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,12 +20,6 @@
   }
 
   .card__description {
-    max-height: 111px;
-    padding: 0 13px 0 12px;
     padding: 0 16px;
-    }
-
-  @include pc() {
-      width: 312px;
   }
 }
