@@ -1,11 +1,28 @@
 .sentence {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
   margin-bottom: 20px;
+  color: #333;
   &:last-child {
     margin-bottom: 0;
   }
-  @include pc() {
-    font-size: 14px;
+
+  &--card {
+    font-size: 12px;
+    margin-bottom: 0;
+    @include pc() {
+      font-size: 14px;
+    }
+  }
+  
+  &--plate {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #fff;
+    padding:0px 16px 8px 16px;
+    @include pc() {
+      padding:0px 16px 24px 16px;
+      font-size: 14px;
+    }
   }
 }
