@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 256px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: $shadow-md;
+  @include pc() {
+    height: 251px;
+    max-width: 312px;
+  }
+
+  .card__img {
+    min-height: 140px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+
+  .card__description {
+    padding: 0 16px;
+  }
+}
