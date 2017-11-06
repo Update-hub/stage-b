@@ -18,16 +18,9 @@ header{
   //PC用
   @include pc(){
     justify-content: space-between;
-    padding-left:3%;
-    padding-right:3%;
     height: 64px;
-
   }
   //表示崩れ対策
-  @media screen and (min-width:700px){
-    padding-left:10%;
-    padding-right:10%;
-  }
 }
 
 .header__menu{
@@ -96,7 +89,7 @@ header{
       line-height:16px;
     }
     //表示崩れ対策用
-    @media screen and (min-width:775px){
+    @include tb(){
       padding-left:32px;
     }
 
