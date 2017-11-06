@@ -10,6 +10,7 @@
   &--card {
     font-size: 12px;
     margin-bottom: 0;
+    padding-bottom: 16px;
     @include pc() {
       font-size: 14px;
     }
