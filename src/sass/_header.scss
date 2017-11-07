@@ -84,7 +84,7 @@ header{
     display:block;
     line-height:48px;
     border-bottom: solid 1px #dddddd;
-    padding:2 0 2 16px;
+    padding:2px 0 2px 16px;
     //PC用
     @include pc(){
       padding:0 0 0 16px;
