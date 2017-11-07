@@ -8,9 +8,8 @@ header{
 }
 
 .header__wrap{
-  display: -webkit-flex; /* Safari */
   display: flex; /* flexbox化 */
-  color:#ffffff;
+  color:#fff;
   justify-content:center; /*列方向中央に配置*/
   align-items:center; /*行方向中央に配置*/
   height:40px;
@@ -21,6 +20,10 @@ header{
     height: 64px;
   }
   //表示崩れ対策
+  @include tb(){
+  padding: 0 32px;
+}
+
 }
 
 .header__menu{
@@ -28,8 +31,10 @@ header{
   align-self: flex-start;
   display: block;
   top:8px;
+  margin-left:-16px;
+  font-size:16px;
   width:24px;
-  color:#ffffff;
+  color:#fff;
   float:left;
   //PC用
   @include pc(){
@@ -59,38 +64,37 @@ header{
    max-width: 240px;/*最大幅（調整してください）*/
    height: 100%;
    background: #fff;/*背景色*/
-   -webkit-transform: translateX(-105%);
    transform: translateX(-105%);/*左に隠しておく*/
+   transition: .3s;
+   box-shadow: none;
    &.open{
-     display: flex;
-     flex-direction:column;
-     transition: 0.3s ease-in-out;/*滑らかに表示*/
-     -webkit-transform: translateX(0%);
+     transition: .3s ease-in-out;/*滑らかに表示*/
      transform: translateX(0%);/*中身を表示（右へスライド）*/
-     color:#000000;
+     color:#000;
      font-size:14px;
-     line-height: 48px;
+     box-shadow: $shadow-md;
    }
   }
   //PC用
   @include pc(){
-    display: block;
+    display: flex;
   }
 }
 .header__nav-item{
-    @include sp(){
-      border-bottom: solid 1px #dcdddd;
-      padding-left:16px;
-    }
+    display:block;
+    line-height:48px;
+    border-bottom: solid 1px #dddddd;
+    padding:2 0 2 16px;
     //PC用
     @include pc(){
-      padding-left:16px;
+      padding:0 0 0 16px;
       font-size:13px;
       line-height:16px;
+      border:none;
     }
     //表示崩れ対策用
     @include tb(){
-      padding-left:32px;
+      padding:0 0 0 32px;
     }
 
 }
@@ -106,6 +110,9 @@ header{
   opacity: 0.3;
   &.open{
     display:block;
+    @include pc(){
+      display: none;
+    }
   }
   @include pc(){
     display: none;
