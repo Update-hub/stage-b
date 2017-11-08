@@ -1,0 +1,39 @@
+.tab {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  max-width: 593px;
+  background-color: #fff;
+  border-radius: 3px;
+  @include pc() {    
+    overflow-x: hidden;
+  }
+
+  &-item {
+    font-size: 12px;
+    line-height: 48px;
+    flex: 1;
+    padding: 0 8px;
+    border-right: 1px solid #ddd;
+    //sp時 非スクロール時 文字をセンタリングする
+    & a {
+      display: block;
+      text-align: center;
+    }
+
+    //aタグの最後の要素に適用
+    &--last {
+      border-right: none;
+    }
+    
+    &--active {
+      background-color: #04a7ad;
+      color: #fff;
+    }
+    
+    @include pc() {
+      font-size: 14px;
+      padding: 0 16px;
+    }
+  }
+}
