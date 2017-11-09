@@ -11,12 +11,14 @@
     justify-content: left;
   }
   .top__title {
+    margin-top: 20px;
     font-size: 20px;
     line-height: 80px;
     white-space: nowrap;
     color: #fff;
     @include pc() {
       font-size: 40px;
+      margin-top: 0;
     }
   }
 }
