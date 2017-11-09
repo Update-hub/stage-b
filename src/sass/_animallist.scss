@@ -42,6 +42,10 @@
   border-radius:50%;
   box-shadow: $shadow-md;
  background-repeat: no-repeat;
+ @include pc(){
+    height: 80px;
+    width: 80px;
+ }
   //背景に合うようにリサイズ
   background-size: 100% 100%;
   &__up{
