@@ -32,7 +32,11 @@
   padding: 0 16px 16px; 
 }
 
-//アコーディオンボタン upが上向き　downが下向き
+.additional-row{
+  display: none;
+}
+
+//アコーディオンボタン default 下向き
 .ac-btn{
   margin: 0 auto 32px auto;
   background-color: #04a7ad;
@@ -42,19 +46,16 @@
   border-radius:50%;
   box-shadow: $shadow-md;
  background-repeat: no-repeat;
- @include pc(){
+ background-image: url('../images/shitasankaku.png');
+  //背景に合うようにリサイズ
+  background-size: 100% 100%;
+  @include pc(){
     height: 80px;
     width: 80px;
  }
-  //背景に合うようにリサイズ
-  background-size: 100% 100%;
-  &__up{
+  &.up{
      //画像は三角マークのみ
     background-image: url('../images/uesankaku.png');
-  }
-  &__down{
-    //画像は三角マークのみ
-    background-image: url('../images/shitasankaku.png');
   }
 }
 
