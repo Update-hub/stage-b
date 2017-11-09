@@ -8,9 +8,12 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -16px;
 }
 
 .col {
+  padding: 0 16px;
+  box-sizing: border-box;
   &--1 {
     width: calc(1/12 * 100%);
   }
