@@ -4,7 +4,6 @@
   justify-content: center;
   @include pc() {
     height: 527px;
-    align-items: center;
     justify-content: left;
   }
   .top__title {
@@ -14,9 +13,6 @@
     color: #fff;
     @include pc() {
       font-size: 40px;
-      line-height: 80px;
-      white-space: nowrap;
-      color: #fff;
     }
   }
 }
@@ -25,5 +21,4 @@
   background: url(../images/top背景.jpg);
   background-size: cover;
   background-position: center;
-  max-width: 100%;
 }
