@@ -1,8 +1,11 @@
 .top {
+  display: flex;
+  margin-top: -42px;
   height: 246px;
   align-items: center;
   justify-content: center;
   @include pc() {
+    margin-top: -62px;
     height: 527px;
     justify-content: left;
   }
