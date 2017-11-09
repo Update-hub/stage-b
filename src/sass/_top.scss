@@ -1,0 +1,30 @@
+.top {
+  display: flex;
+  margin-top: -40px;
+  height: 246px;
+  align-items: center;
+  justify-content: center;
+  @include pc() {
+    padding: 0 32px;
+    margin-top: -64px;
+    height: 527px;
+    justify-content: left;
+  }
+  .top__title {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 80px;
+    white-space: nowrap;
+    color: #fff;
+    @include pc() {
+      font-size: 40px;
+      margin-top: 0;
+    }
+  }
+}
+
+.top-bg {
+  background: url(../images/top背景.jpg);
+  background-size: cover;
+  background-position: center;
+}
