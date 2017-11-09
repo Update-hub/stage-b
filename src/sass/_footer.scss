@@ -1,6 +1,6 @@
 .footer{
 
-  background-color: #ECECEC;
+  background-color: #ececec;
 
   &__wrapper{
     display:flex;
@@ -14,7 +14,7 @@
 
   &__nav{
     font-size:13px;
-    line-height:16px;
+    line-height:19px;
     padding:16px 0 0 0;
     @include pc(){
       padding: 32px 32px 0px 32px;
@@ -22,7 +22,7 @@
 
     &-item{
       display: block;
-      padding:0 0 11px 0;
+      padding:0 0 8px 0;
       @include pc(){
         display:inline;
         padding:0 32px 0 0;
@@ -33,7 +33,7 @@
   &__copyright{
     padding:0 0 16px 0;
     font-size:14px;
-    line-height:17px;
+    line-height:20px;
     @include pc(){
       padding:0 32px 16px 32px;
     }
