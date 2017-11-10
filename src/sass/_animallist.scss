@@ -22,7 +22,10 @@
 }
 .animal-col{
 //カード周りのpadding 左右と下
-  padding: 0 16px 16px; 
+    padding: 0 0 16px 0; 
+  @include pc(){
+    padding: 0 16px 16px 16px; 
+  }
 }
 
 .additional-row{
