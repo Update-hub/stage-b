@@ -89,4 +89,43 @@
       width: calc(12/12 * 100%);
     }
   }
+
+  @include xl (){
+    &-xl--1 {
+      width: calc(1/12 * 100%);
+    }
+    &-xl--2 {
+      width: calc(2/12 * 100%);
+    }
+    &-xl--3 {
+      width: calc(3/12 * 100%);
+    }
+    &-xl--4 {
+      width: calc(4/12 * 100%);
+    }
+    &-xl--5 {
+      width: calc(5/12 * 100%);
+    }
+    &-xl--6 {
+      width: calc(6/12 * 100%);
+    }
+    &-xl--7 {
+      width: calc(7/12 * 100%);
+    }
+    &-xl--8 {
+      width: calc(8/12 * 100%);
+    }
+    &-xl--9 {
+      width: calc(9/12 * 100%);
+    }
+    &-xl--10 {
+      width: calc(10/12 * 100%);
+    }
+    &-xl--11 {
+      width: calc(11/12 * 100%);
+    }
+    &-xl--12 {
+      width: calc(12/12 * 100%);
+    }
+  }
 }
