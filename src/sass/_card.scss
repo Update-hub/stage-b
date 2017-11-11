@@ -7,7 +7,6 @@
   box-shadow: $shadow-md;
   margin: 0 auto;
   @include pc() {
-    height: 276px;
     max-width: 312px;
   }
 

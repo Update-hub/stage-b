@@ -1,5 +1,6 @@
 .animals-list{
   padding: 32px 0;
+  background-color:#fafafa;
 
   &__title{
 //セクションタイトルと説明を中央寄せ
@@ -22,8 +23,10 @@
 }
 .animal-col{
 //カード周りのpadding 左右と下
-    padding: 0 0 16px 0; 
+    padding: 0 0 16px 0;
   @include pc(){
+//flexの性質を利用して全て同じ高さに
+    display:flex;
     padding: 0 16px 16px 16px; 
   }
 }
