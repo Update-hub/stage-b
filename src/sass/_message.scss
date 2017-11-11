@@ -1,5 +1,6 @@
 .message {
   flex-direction: column;
+  padding: 32px 0;
   @include pc() {
     height: 335px;
     align-items: center;
@@ -7,16 +8,21 @@
   }
   &__img {
     &-0 {
-      max-height: 223px;
+      max-height: 120px;
       display: block;
       margin: 0 auto;
+      padding-bottom: 26px;
+      @include pc() {
+        max-height: 223px;
+        padding-bottom: 0;
+      }
     }
   }
   &__about {
+    max-width: 256px;
+    margin: 0 auto;
     @include pc() {
-      max-width: 523px;
-      padding-left: 5px;
-      padding-right: 32px;
+      max-width: 485px;
     }
     &-0 {
       text-align: center;
