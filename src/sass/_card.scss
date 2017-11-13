@@ -5,8 +5,9 @@
   background-color: #fff;
   border-radius: 3px;
   box-shadow: $shadow-md;
+  margin: 0 auto;
   @include pc() {
-    height: 251px;
+    width:100%;
     max-width: 312px;
   }
 
@@ -21,5 +22,8 @@
 
   .card__description {
     padding: 0 16px;
+    @include pc{
+      min-height:112px;
+    }
   }
 }
