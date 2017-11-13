@@ -162,14 +162,14 @@
     <div class="container">
       <h1 class="hdg contact-header">お問い合わせ</h1>
       <p class="contact-header"><strong class="asterisk">*</strong>が付いている項目は必須入力です。</p>
-      <div class="contact-form">
+      <form action="" class="contact-form">
         <div class="row">
           <p class="contact-form__label col col--12 col-lg--3">お名前 <strong class="asterisk">*</strong></p>
-          <input type="text" name="name" id="input-name" class="contact-form__input-box col col--12 col-lg--7 col-xl--6">
+          <input type="text" name="name" id="input-name" autocomplete="name" maxlength="10" required class="contact-form__input-box col col--12 col-lg--7 col-xl--6">
         </div>
         <div class="row">
           <p class="contact-form__label col col--12 col-lg--3">メールアドレス <strong class="asterisk">*</strong></p>
-          <input type="email" name="email" id="input-email" class="contact-form__input-box col col--12 col-lg--7 col-xl--6">
+          <input type="email" name="email" id="input-email" autocomplete="email" maxlength="20" required class="contact-form__input-box col col--12 col-lg--7 col-xl--6">
         </div>
         <div class="row">
           <p class="contact-form__label col col--12 col-lg--3">住所</p>
@@ -177,13 +177,12 @@
         </div>
         <div class="row">
           <p class="contact-form__label col col--12 col-lg--3">内容 <strong class="asterisk">*</strong></p>
-          <textarea name="text" id="input-text" class="contact-form__input-box contact-form__input-box--text col col--12 col-lg--7 col-xl--6"></textarea>
+          <textarea name="text" id="input-text" maxlength="1000" required class="contact-form__input-box contact-form__input-box--text col col--12 col-lg--7 col-xl--6"></textarea>
         </div>
-      </div>
-
-      <div class="row wrap-send-button">
-          <input type="submit" name="send" id="send-button" class="col col--1" value="送信">
+        <div class="row wrap-send-button">
+            <input type="submit" name="send" id="send-button" class="col col--1" value="送信">
         </div>
+      </form>
       
     </div>
   </div>
