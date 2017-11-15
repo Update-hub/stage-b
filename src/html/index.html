@@ -2,18 +2,19 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
-  <link rel="stylesheet" href="/style.css">
-  <title>index</title>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/nav.js"></script>
-  <script type="text/javascript" src="./js/accordion.js"></script>
-  <script type="text/javascript" src="./js/slick/slick.min.js"></script>
-  <script type="text/javascript" src="./js/carousel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
+    <link rel="stylesheet" href="/style.css">
+    <title>index</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/accordion.js"></script>
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/carousel.js"></script>
+    <script type="text/javascript" src="./js/scroll.js"></script>
 </head>
 
 <body>
@@ -25,12 +26,12 @@
       </a>
       <div class="header__wrap">
         <div class="header__logo">Save Animals in Japan</div>
-        <nav class="header__nav js-nav">
-          <a href="" class="header__nav-item">コンセプト</a>
-          <a href="" class="header__nav-item">絶滅危惧種一覧</a>
-          <a href="" class="header__nav-item">知識</a>
-          <a href="" class="header__nav-item">お問い合わせ</a>
-        </nav>
+         <nav class="header__nav js-nav">
+           <a href="#message" class="nav-item header__nav-item">コンセプト</a>
+           <a href="#animals-list" class="nav-item header__nav-item">絶滅危惧種一覧</a>
+           <a href="#animals-knowledge" class="nav-item header__nav-item">知識</a>
+           <a href="#contact" class="nav-item header__nav-item">お問い合わせ</a>
+         </nav>
       </div>
     </div>
   </header>
@@ -42,7 +43,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="message">
+    <div class="message" id="message">
       <div class="message__img col col--12 col-lg--6">
         <img class="message__img-0" src="../images/messageフクロウ.png" alt="messageフクロウ">
       </div>
@@ -55,7 +56,7 @@
       </div>
     </div>
   </div>
-  <div class="animals-list">
+  <div class="animals-list" id="animals-list">
     <div class="container">
       <div class="animals-list__title">
         <h1 class="hdg">絶滅危惧種一覧</h1>
@@ -180,7 +181,7 @@
       <a class="ac-btn" href="#"></a>
     </div>
   </div>
-  <div class="animals-info">
+  <div class="animals-info" id="animals-info">
     <div class="carousel">
       <div class="carousel-A">
         <div class="container">
@@ -241,7 +242,7 @@
     </div>
   </div>
 
-  <div class="animals-knowledge">
+  <div class="animals-knowledge" id="animals-knowledge">
     <div class="knowledge">
       <div class="container">
         <h2 class="knowledge-text hdg col-lg--4">絶滅危惧種の知識</h2>
@@ -289,7 +290,7 @@
     </div>
   </div>
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <div class="container">
       <h1 class="hdg contact-header">お問い合わせ</h1>
       <p class="contact-header">
@@ -326,15 +327,17 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <div class="footer__nav">
-          <a href="" class="footer__nav-item">コンセプト</a>
-          <a href="" class="footer__nav-item">絶滅危惧種一覧</a>
-          <a href="" class="footer__nav-item">知識</a>
-          <a href="" class="footer__nav-item">お問い合わせ</a>
-        </div>
+       <div class="footer__nav">
+          <a href="#message" class="nav-item footer__nav-item">コンセプト</a>
+          <a href="#animals-list" class="nav-item footer__nav-item">絶滅危惧種一覧</a>
+          <a href="#animals-knowledge" class="nav-item footer__nav-item">知識</a>
+          <a href="#contact" class="nav-item footer__nav-item">お問い合わせ</a>
+       </div>
         <p class="footer__copyright">
-          © Deer, Inc.
+            © Deer, Inc.
         </p>
+        <div class="top-btn">
+        </div>
       </div>
     </div>
   </footer>
