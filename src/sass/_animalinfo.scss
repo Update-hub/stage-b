@@ -51,18 +51,27 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    @include pc(){
+      background-position: 0px 0px;
+    }
   }
   &-B{
     background-image:url(../images/オオワシ.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    @include pc(){
+      background-position: 0px 0px;
+    }
   }
   &-C{
     background-image:url(../images/クロイワトカゲモドキ.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    @include pc(){
+      background-position: 0px 0px;
+    }
   }
 }
 
