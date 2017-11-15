@@ -43,7 +43,7 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src('./src/js/**/*.js')
+  return gulp.src('./src/js/**/*')
     .pipe(gulp.dest('./dist/js'));
 });
 
