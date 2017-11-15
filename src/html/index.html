@@ -236,6 +236,33 @@
       </div>
     </div>
   </div>
+  <div class="contact">
+    <div class="container">
+      <h1 class="hdg contact-header">お問い合わせ</h1>
+      <p class="contact-header"><strong class="asterisk">*</strong>が付いている項目は必須入力です。</p>
+      <form action="" class="contact-form">
+        <div class="contact-form__row">
+          <p class="contact-form__label">お名前 <strong class="asterisk">*</strong></p>
+          <input type="text" name="name" id="input-name" autocomplete="name" maxlength="10" required class="contact-form__input-box">
+        </div>
+        <div class="contact-form__row">
+          <p class="contact-form__label">メールアドレス <strong class="asterisk">*</strong></p>
+          <input type="email" name="email" id="input-email" autocomplete="email" maxlength="20" required class="contact-form__input-box">
+        </div>
+        <div class="contact-form__row">
+          <p class="contact-form__label">住所</p>
+          <input type="text" name="address" id="input-address" class="contact-form__input-box">
+        </div>
+        <div class="contact-form__row chrome-textarea-outer">
+          <p class="contact-form__label chrome-textarea-inner">内容 <strong class="asterisk">*</strong></p>
+          <textarea name="text" id="input-text" maxlength="1000" required class="contact-form__input-box contact-form__input-box--text chrome-textarea-inner"></textarea>
+        </div>
+        <div class="contact-form__row wrap-send-button">
+            <input type="submit" name="send" id="send-button" class="" value="送信">
+        </div>
+      </form>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
