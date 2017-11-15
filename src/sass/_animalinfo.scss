@@ -6,9 +6,9 @@
     padding-bottom:80px;
   }
   &__row{
-    position: relative;
-     height:378px;
-     margin:0px;
+      position: relative;
+      height:378px;
+      margin:0px;
       @include pc(){
       margin:0 -16px;
       height: 488px;
@@ -51,7 +51,6 @@
 
 .carousel{
   &-A{
-
     background-image:url(../images/ezohiguma.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -80,25 +79,8 @@
 }
 //slick 設定
 
-.arrows-wrapper{
-  position: absolute;
-  top:0;
-  z-index: -9;
-}
-.arrow-container{
-  max-width: 1064px;
-  height:488px;
-  position:relative;
-  z-index: -99;
-  padding:0 32px;
-  box-sizing: border-box;
-}
 
-.slick-dotted.slick-slider
-{
-  //defaultの余白を打ち消し
-    margin-bottom: 0px;
-}
+//左右の矢印　設定
 
 /*左右の矢印の色を変える*/
 .slick-prev:before,
@@ -115,6 +97,7 @@
 }
 /*左右の矢印の位置を変える*/
 .slick-next {
+  //SP時は非表示
   display: none;
   @include pc(){
     display: block;
@@ -139,6 +122,11 @@
   }
 }
 //スライダー下dotボタン
+.slick-dotted.slick-slider
+{
+  //defaultの余白を打ち消し
+    margin-bottom: 0px;
+}
 .slick-dots {
   font-size:8px;
   margin-bottom:0px;
