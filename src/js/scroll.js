@@ -16,10 +16,11 @@ $(function(){
 
    /* TOP-Pageボタン制御 */
    var topBtn = $('.top-btn');
+   var windowH = window.innerHeight;
    topBtn.hide();
    //スクロールが100に達したらボタン表示
    $(window).scroll(function () {
-       if ($(this).scrollTop() > 100) {
+       if ($(this).scrollTop() > windowH) {
            topBtn.fadeIn();
        } else {
            topBtn.fadeOut();
