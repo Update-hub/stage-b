@@ -1,10 +1,6 @@
 .animals-info{
   //セクション区切りの余白
-  padding-bottom:32px;
   position: relative;
-  @include pc(){
-    padding-bottom:80px;
-  }
   &__row{
       position: relative;
       height:378px;
@@ -55,27 +51,18 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    @include pc(){
-      background-position: 0 -104px;
-    }
   }
   &-B{
     background-image:url(../images/オオワシ.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    @include pc(){
-      background-position: 0 -104px;
-    }
   }
   &-C{
     background-image:url(../images/クロイワトカゲモドキ.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    @include pc(){
-      background-position: 0 -104px;
-    }
   }
 }
 
