@@ -30,7 +30,7 @@
   }
   &__h1{
     //XDのpaddingそのまま入力
-    padding:16px 24px 16px 16px;
+    padding:16px 16px 8px 16px;
     line-height: 24px;
     @include pc(){
     line-height:44px;
@@ -40,8 +40,8 @@
 
   &__p{
     //XDのpaddingそのまま入力
-    padding:0 20px 30px 24px;
-    line-height: 22px;
+    padding:0 16px 32px 16px;
+    line-height: 24px;
     @include pc(){
       line-height: 24px;
       padding:0px 20px 24px 20px;
@@ -54,16 +54,28 @@
     background-image:url(../images/ezohiguma.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
+    @include pc(){
+      background-position: 0 -104px;
+    }
   }
   &-B{
     background-image:url(../images/オオワシ.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
+    @include pc(){
+      background-position: 0 -104px;
+    }
   }
   &-C{
     background-image:url(../images/クロイワトカゲモドキ.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
+    @include pc(){
+      background-position: 0 -104px;
+    }
   }
 }
 
@@ -132,11 +144,6 @@
   margin-bottom:0px;
   right:8px;
   bottom: 8px;
-  @include pc(){
-    right:8px;
-    bottom:8px;
-  }
-
   li{
     width:8px;
     height:8px;
