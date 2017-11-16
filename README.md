@@ -13,7 +13,7 @@
 
 ### 公開サーバー
 
-Firebaseでdeployをお願いします。
+https://stage-b.firebaseapp.com/
 
 ## スケジュール
 

@@ -45,7 +45,7 @@
   border-radius:50%;
   box-shadow: $shadow-md;
   background-repeat: no-repeat;
-  background-image: url('../images/shitasankaku.png');
+  background-image: url('./images/shitasankaku.png');
   //背景に合うようにリサイズ
   background-size: 100% 100%;
   @include pc(){
@@ -54,7 +54,7 @@
  }
   &.up{
      //画像は三角マークのみ
-    background-image: url('../images/uesankaku.png');
+    background-image: url('./images/uesankaku.png');
   }
 }
 
