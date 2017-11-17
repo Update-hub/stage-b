@@ -26,6 +26,9 @@
     & .tab {
       margin: 0 auto;
       border-radius: 0;
+      @include pc(){
+        border-radius: 3px;
+      }
     }
   }
   &-wrap {
