@@ -43,12 +43,21 @@ header{
 }
 
 .header__logo{
-  font-size:16px;
-  line-height: 19px;
-  //PC用
-  @include pc(){
-    font-size:20px;
-    line-height: 24px;
+  &-sp {
+    display: block;
+    font-size:16px;
+    line-height: 19px;
+    @include pc(){
+      display: none;
+    }
+  }
+  &-pc {
+    display: none;
+    @include pc(){
+      display: block;
+      font-size:20px;
+      line-height: 24px;
+    }
   }
 }
 
