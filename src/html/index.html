@@ -2,18 +2,19 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
-  <link rel="stylesheet" href="/style.css">
-  <title>index</title>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/nav.js"></script>
-  <script type="text/javascript" src="./js/accordion.js"></script>
-  <script type="text/javascript" src="./js/slick/slick.min.js"></script>
-  <script type="text/javascript" src="./js/carousel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
+    <link rel="stylesheet" href="./style.css">
+    <title>index</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/accordion.js"></script>
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/carousel.js"></script>
+    <script type="text/javascript" src="./js/scroll.js"></script>
 </head>
 
 <body>
@@ -24,13 +25,16 @@
         <i class="fa fa-bars fa-lg"></i>
       </a>
       <div class="header__wrap">
-        <div class="header__logo">Save Animals in Japan</div>
-        <nav class="header__nav js-nav">
-          <a href="" class="header__nav-item">コンセプト</a>
-          <a href="" class="header__nav-item">絶滅危惧種一覧</a>
-          <a href="" class="header__nav-item">知識</a>
-          <a href="" class="header__nav-item">お問い合わせ</a>
-        </nav>
+        <div class="header__logo-sp">Save Animals in Japan</div>
+        <div class="header__logo-pc">
+          <a href="./index.html">Save Animals in Japan</a>
+        </div>
+         <nav class="header__nav js-nav">
+           <a href="#message" class="nav-item header__nav-item">コンセプト</a>
+           <a href="#animals-list" class="nav-item header__nav-item">絶滅危惧種一覧</a>
+           <a href="#animals-knowledge" class="nav-item header__nav-item">知識</a>
+           <a href="#contact" class="nav-item header__nav-item">お問い合わせ</a>
+         </nav>
       </div>
     </div>
   </header>
@@ -42,9 +46,9 @@
     </div>
   </div>
   <div class="container">
-    <div class="message">
+    <div class="message" id="message">
       <div class="message__img col col--12 col-lg--6">
-        <img class="message__img-0" src="../images/messageフクロウ.png" alt="messageフクロウ">
+        <img class="message__img-0" src="./images/messageフクロウ.png" alt="messageフクロウ">
       </div>
       <div class="message__about col col--12 col-lg--6">
         <h2 class="message__about message__about-hdg hdg">Save Animals in Japan</h2>
@@ -55,7 +59,7 @@
       </div>
     </div>
   </div>
-  <div class="animals-list">
+  <div class="animals-list" id="animals-list">
     <div class="container">
       <div class="animals-list__title">
         <h1 class="hdg">絶滅危惧種一覧</h1>
@@ -65,7 +69,7 @@
         <div class="row animal-row">
           <div class="col animal-col col--12 col-lg--6 col-xl--4">
             <div class="card">
-              <span class="card__img" style="background-image: url('../images/aoumigame.jpg')"></span>
+              <span class="card__img" style="background-image: url('./images/aoumigame.jpg')"></span>
               <div class="card__description">
                 <h2 class="hdg--card">アオウミガメ</h2>
                 <p class="sentence--card">体内の脂肪が青いためにアオウミガメと呼ばれる。昔から食用とされている。</p>
@@ -74,7 +78,7 @@
           </div>
           <div class="col  animal-col col--12 col-lg--6 col-xl--4">
             <div class="card">
-              <span class="card__img" style="background-image: url('../images/akaumigame.jpg')"></span>
+              <span class="card__img" style="background-image: url('./images/akaumigame.jpg')"></span>
               <div class="card__description">
                 <h2 class="hdg--card">アカウミガメ</h2>
                 <p class="sentence--card">アカウミガメは信仰の対象としてもしばしば用いられる。</p>
@@ -83,7 +87,7 @@
           </div>
           <div class="col animal-col col--12 col-lg--6 col-xl--4">
             <div class="card">
-              <span class="card__img" style="background-image: url('../images/ahoudori.jpg')"></span>
+              <span class="card__img" style="background-image: url('./images/ahoudori.jpg')"></span>
               <div class="card__description">
                 <h2 class="hdg--card">アホウドリ</h2>
                 <p class="sentence--card">和名は人間が接近しても地表での動きが緩怠で、捕殺が容易だったことに由来する。</p>
@@ -92,7 +96,7 @@
           </div>
           <div class="col animal-col col--12 col-lg--6 col-xl--4">
             <div class="card">
-              <span class="card__img" style="background-image: url('../images/amaminokurousagi.jpg')"></span>
+              <span class="card__img" style="background-image: url('./images/amaminokurousagi.jpg')"></span>
               <div class="card__description">
                 <h2 class="hdg--card">アマミノクロウサギ</h2>
                 <p class="sentence--card">耳や後脚の短く、「原始的なウサギ」と言われている。</p>
@@ -101,7 +105,7 @@
           </div>
           <div class="col animal-col col--12 col-lg--6 col-xl--4">
             <div class="card">
-              <span class="card__img" style="background-image: url('../images/ishikawagaeru.jpg')"></span>
+              <span class="card__img" style="background-image: url('./images/ishikawagaeru.jpg')"></span>
               <div class="card__description">
                 <h2 class="hdg--card">イシカワガエル</h2>
                 <p class="sentence--card">「日本で一番美しいカエル」と言われる。</p>
@@ -110,7 +114,7 @@
           </div>
           <div class="col animal-col col--12 col-lg--6 col-xl--4">
             <div class="card">
-              <span class="card__img" style="background-image: url('../images/iboimori.jpg')"></span>
+              <span class="card__img" style="background-image: url('./images/iboimori.jpg')"></span>
               <div class="card__description">
                 <h2 class="hdg--card">イボイモリ</h2>
                 <p class="sentence--card">太古からずっと同じ姿で、「生きた化石」と言われる。</p>
@@ -122,7 +126,7 @@
           <div class="row animal-row">
             <div class="col animal-col col--12 col-lg--6 col-xl--4">
               <div class="card">
-                <span class="card__img" style="background-image: url('../images/amaminokurousagi.jpg')"></span>
+                <span class="card__img" style="background-image: url('./images/amaminokurousagi.jpg')"></span>
                 <div class="card__description">
                   <h2 class="hdg--card">アマミノクロウサギ</h2>
                   <p class="sentence--card">耳や後脚の短く、「原始的なウサギ」と言われている。</p>
@@ -131,7 +135,7 @@
             </div>
             <div class="col animal-col col--12 col-lg--6 col-xl--4">
               <div class="card">
-                <span class="card__img" style="background-image: url('../images/ishikawagaeru.jpg')"></span>
+                <span class="card__img" style="background-image: url('./images/ishikawagaeru.jpg')"></span>
                 <div class="card__description">
                   <h2 class="hdg--card">イシカワガエル</h2>
                   <p class="sentence--card">「日本で一番美しいカエル」と言われる。</p>
@@ -140,7 +144,7 @@
             </div>
             <div class="col animal-col col--12 col-lg--6 col-xl--4">
               <div class="card">
-                <span class="card__img" style="background-image: url('../images/iboimori.jpg')"></span>
+                <span class="card__img" style="background-image: url('./images/iboimori.jpg')"></span>
                 <div class="card__description">
                   <h2 class="hdg--card">イボイモリ</h2>
                   <p class="sentence--card">太古からずっと同じ姿で、「生きた化石」と言われる。</p>
@@ -149,7 +153,7 @@
             </div>
             <div class="col animal-col col--12 col-lg--6 col-xl--4">
               <div class="card">
-                <span class="card__img" style="background-image: url('../images/amaminokurousagi.jpg')"></span>
+                <span class="card__img" style="background-image: url('./images/amaminokurousagi.jpg')"></span>
                 <div class="card__description">
                   <h2 class="hdg--card">アマミノクロウサギ</h2>
                   <p class="sentence--card">耳や後脚の短く、「原始的なウサギ」と言われている。</p>
@@ -158,7 +162,7 @@
             </div>
             <div class="col animal-col col--12 col-lg--6 col-xl--4">
               <div class="card">
-                <span class="card__img" style="background-image: url('../images/ishikawagaeru.jpg')"></span>
+                <span class="card__img" style="background-image: url('./images/ishikawagaeru.jpg')"></span>
                 <div class="card__description">
                   <h2 class="hdg--card">イシカワガエル</h2>
                   <p class="sentence--card">「日本で一番美しいカエル」と言われる。</p>
@@ -167,7 +171,7 @@
             </div>
             <div class="col animal-col col--12 col-lg--6 col-xl--4">
               <div class="card">
-                <span class="card__img" style="background-image: url('../images/iboimori.jpg')"></span>
+                <span class="card__img" style="background-image: url('./images/iboimori.jpg')"></span>
                 <div class="card__description">
                   <h2 class="hdg--card">イボイモリ</h2>
                   <p class="sentence--card">太古からずっと同じ姿で、「生きた化石」と言われる。</p>
@@ -180,7 +184,7 @@
       <a class="ac-btn" href="#"></a>
     </div>
   </div>
-  <div class="animals-info">
+  <div class="animals-info" id="animals-info">
     <div class="carousel">
       <div class="carousel-A">
         <div class="container">
@@ -241,7 +245,7 @@
     </div>
   </div>
 
-  <div class="animals-knowledge">
+  <div class="animals-knowledge" id="animals-knowledge">
     <div class="knowledge">
       <div class="container">
         <h2 class="knowledge-text hdg col-lg--4">絶滅危惧種の知識</h2>
@@ -289,7 +293,7 @@
     </div>
   </div>
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <div class="container">
       <h1 class="hdg contact-header">お問い合わせ</h1>
       <p class="contact-header">
@@ -326,15 +330,17 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__wrapper">
-        <div class="footer__nav">
-          <a href="" class="footer__nav-item">コンセプト</a>
-          <a href="" class="footer__nav-item">絶滅危惧種一覧</a>
-          <a href="" class="footer__nav-item">知識</a>
-          <a href="" class="footer__nav-item">お問い合わせ</a>
-        </div>
+       <div class="footer__nav">
+          <a href="#message" class="nav-item footer__nav-item">コンセプト</a>
+          <a href="#animals-list" class="nav-item footer__nav-item">絶滅危惧種一覧</a>
+          <a href="#animals-knowledge" class="nav-item footer__nav-item">知識</a>
+          <a href="#contact" class="nav-item footer__nav-item">お問い合わせ</a>
+       </div>
         <p class="footer__copyright">
-          © Deer, Inc.
+            © Deer, Inc.
         </p>
+        <div class="top-btn">
+        </div>
       </div>
     </div>
   </footer>

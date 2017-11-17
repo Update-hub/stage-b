@@ -1,0 +1,24 @@
+.top-btn{
+  position: fixed;
+  z-index:999px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.3);
+  display: block;
+  height: 40px;
+  width: 40px;
+  right:16px;
+  bottom:16px;
+  border-radius:50%;
+  box-shadow: $shadow-md;
+  background-repeat: no-repeat;
+  background-image: url('./images/uesannkaku35.png');
+  
+  //背景に合うようにリサイズ
+  background-size: 100% 100%;
+  @include pc(){
+    height: 80px;
+    width: 80px;
+    right:140px;
+    bottom:78px;
+ }
+}
