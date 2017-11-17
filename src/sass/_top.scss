@@ -1,30 +1,33 @@
 .top {
   display: flex;
+  padding-top: 40px;
   margin-top: -40px;
-  height: 246px;
+  height: 206px;
   align-items: center;
   justify-content: center;
   @include pc() {
-    padding: 0 32px;
+    padding-top: 64px;
     margin-top: -64px;
-    height: 527px;
+    height: 463px;
     justify-content: left;
   }
-  .top__title {
-    margin-top: 20px;
-    font-size: 20px;
-    line-height: 80px;
-    white-space: nowrap;
-    color: #fff;
+  &__title {
+      font-size: 20px;
+      line-height: 80px;
+      white-space: nowrap;
+      color: #fff;
+      @include pc() {
+        font-size: 40px;
+        margin-top: 0;
+      }
+    }
+  &-bg {
+    height: 246px;
+    background: url(../images/top背景.jpg);
+    background-size: cover;
+    background-position: center;
     @include pc() {
-      font-size: 40px;
-      margin-top: 0;
+      height: 527px;
     }
   }
-}
-
-.top-bg {
-  background: url(./images/top背景.jpg);
-  background-size: cover;
-  background-position: center;
 }
