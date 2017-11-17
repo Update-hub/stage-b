@@ -54,7 +54,12 @@
  }
   &.up{
      //画像は三角マークのみ
+     
     background-image: url('./images/uesankaku.png');
+    display:none;
+    @include pc(){
+      display: block;
+    }
   }
 }
 
