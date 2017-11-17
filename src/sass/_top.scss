@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   @include pc() {
-    padding-top: 64px;
+    padding: 64px 32px 0 32px;
     margin-top: -64px;
     height: 463px;
     justify-content: left;
