@@ -1,13 +1,12 @@
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 256px;
+  width: 100%;
   background-color: #fff;
   border-radius: 3px;
   box-shadow: $shadow-md;
   margin: 0 auto;
   @include pc() {
-    width:100%;
     max-width: 312px;
   }
 
