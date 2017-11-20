@@ -5,7 +5,7 @@ let sass = require('gulp-sass');
 let imagemin = require('gulp-imagemin');
 let browserSync = require('browser-sync').create();
 let pngquant = require('imagemin-pngquant');
-// let mozjpeg = require('imagemin-mozjpeg');
+let mozjpeg = require('imagemin-mozjpeg');
 let watch = require('gulp-watch');
 let plumber = require('gulp-plumber');
 
@@ -32,8 +32,7 @@ gulp.task('imagemin', function() {
         quality: '65-80',
         speed: 1,
       }),
-      // mozjpeg
-      imagemin.jpegtran({
+      mozjpeg({
         quality: 80,
       }),
       imagemin.svgo(),
