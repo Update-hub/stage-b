@@ -17,7 +17,7 @@
     border-right: 1px solid #ddd;
     //sp時 非スクロール時 文字をセンタリングする
     & a {
-      display: block;
+      display: inline-block;
       text-align: center;
     }
 
