@@ -25,12 +25,11 @@
     
   }
   &__h1{
-    //XDのpaddingそのまま入力
     padding:16px 16px 8px 16px;
     line-height: 24px;
     @include pc(){
     line-height:44px;
-    padding:20px 24px 16px 20px;
+    padding:24px 24px 16px 24px;
     }
   }
 
@@ -40,7 +39,7 @@
     line-height: 24px;
     @include pc(){
       line-height: 24px;
-      padding:0px 20px 24px 20px;
+      padding:0px 24px 24px 24px;
     }
   }
 } 
@@ -56,7 +55,7 @@
     }
   }
   &-B{
-    background-image:url(./images/オオワシ.jpg);
+    background-image:url(./images/oowashi.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -65,7 +64,7 @@
     }
   }
   &-C{
-    background-image:url(./images/クロイワトカゲモドキ.jpg);
+    background-image:url(./images/tokage.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
