@@ -13,12 +13,16 @@
     font-size: 12px;
     line-height: 48px;
     flex: 1;
-    padding: 0 8px;
     border-right: 1px solid #ddd;
     //sp時 非スクロール時 文字をセンタリングする
     & a {
-      display: block;
+      display: inline-block;
       text-align: center;
+      padding: 0 8px;
+      @include pc(){
+        padding: 0 16px;
+        font-size: 14px;
+      }
     }
 
     //aタグの最後の要素に適用
@@ -29,11 +33,6 @@
     &--active {
       background-color: #04a7ad;
       color: #fff;
-    }
-    
-    @include pc() {
-      font-size: 14px;
-      padding: 0 16px;
     }
   }
 }
