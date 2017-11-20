@@ -34,6 +34,7 @@
     color: #fff;
     @include pc() {
       padding: 24px 24px 16px 24px;
+      line-height: 44px;
       font-size: 34px;
     }
     span {
