@@ -1,6 +1,6 @@
 .top-btn{
   position: fixed;
-  z-index:999px;
+  z-index:999;
   margin: 0 auto;
   background-color: rgba(0,0,0,0.3);
   display: block;
@@ -12,6 +12,7 @@
   box-shadow: $shadow-md;
   background-repeat: no-repeat;
   background-image: url('./images/uesannkaku35.png');
+  cursor:pointer;
   
   //背景に合うようにリサイズ
   background-size: 100% 100%;
