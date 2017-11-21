@@ -14,7 +14,6 @@
     width: 100%;
   }
   &__content {    
-    height: 774px;
     background: center/cover no-repeat;
     margin-top: 16px;
     @include pc(){
@@ -26,6 +25,9 @@
     & .tab {
       margin: 0 auto;
       border-radius: 0;
+      @include pc(){
+        border-radius: 3px;
+      }
     }
   }
   &-wrap {
@@ -33,24 +35,18 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 100%;
-    //スクロール幅 + tabの高さをvalueとする
-    margin-top: calc(#{$scroll-width} - 48px );
+    min-height: 480px;
     @include pc(){
+      height: 100%;
       margin-top: -48px;
     }
   }
   &-plate {
     display: none;
-    max-height: 377px;
-    overflow-y: scroll;
     //文字左揃え
     text-align: left;
     @include pc(){
       margin: 0 32px 32px 0;
-      //既定のサイズに固定
-      height: 100%;
-      max-height: 291px;
       max-width: 442px;
     }
   }
