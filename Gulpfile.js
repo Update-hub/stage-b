@@ -8,6 +8,7 @@ let pngquant = require('imagemin-pngquant');
 // let mozjpeg = require('imagemin-mozjpeg');
 let watch = require('gulp-watch');
 let plumber = require('gulp-plumber');
+let cssmin = require('gulp-cssmin');
 
 
 gulp.task('serve', function() {
@@ -22,6 +23,7 @@ gulp.task('sass', function() {
   return gulp.src('./src/sass/**/*.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
+    .pipe(cssmin())
     .pipe(gulp.dest('./dist'));
 });
 
