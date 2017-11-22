@@ -36,6 +36,12 @@
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 480px;
+    ///IE11ハック 背景高さ固定///
+    @media all and (-ms-high-contrast:none){
+      min-height: 0;
+      height: 520px;
+    }
+    ///IE11ハック ここまで///
     @include pc(){
       height: 100%;
       margin-top: -48px;

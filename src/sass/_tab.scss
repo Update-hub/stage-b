@@ -1,7 +1,6 @@
 .tab {
   display: flex;
   overflow-x: scroll;
-  white-space: nowrap;
   max-width: 593px;
   background-color: #fff;
   border-radius: 3px;
@@ -12,9 +11,9 @@
   &-item {
     font-size: 12px;
     line-height: 48px;
-    flex: 1;
+    flex-grow: 1;
     border-right: 1px solid #ddd;
-    //sp時 非スクロール時 文字をセンタリングする
+    white-space: nowrap;
     & a {
       display: inline-block;
       text-align: center;
