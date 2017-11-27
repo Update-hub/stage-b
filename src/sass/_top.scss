@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   @include pc() {
+    // 省略可能
     padding: 64px 32px 0 32px;
     margin-top: -64px;
     height: 463px;
@@ -23,6 +24,7 @@
     }
   &-bg {
     height: 246px;
+    // backgroundまとめられる
     background: url(./images/topback.jpg);
     background-size: cover;
     background-position: center;

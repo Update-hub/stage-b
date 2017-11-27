@@ -1,7 +1,9 @@
 .container {
   max-width: 1064px;
   padding: 0 32px;
+  // box-sizing がないので1064に64px加算される幅がマックスになるが、デザインどおりか？
   margin: 0 auto;
+  // もともとautoなので不要
   width: auto;
 }
 
@@ -14,6 +16,7 @@
 .col {
   padding: 0 16px;
   box-sizing: border-box;
+  // eachを使ってプログラマブルにかこう！
   &--1 {
     width: calc(1/12 * 100%);
   }

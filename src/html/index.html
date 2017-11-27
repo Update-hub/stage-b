@@ -1,3 +1,6 @@
+<!-- 全体的にパスはルート相対で書く / のがスタンダード -->
+<!-- セクションごとに <section> で囲み、空行があるとより見やすいコードになる -->
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -8,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
   <link rel="stylesheet" href="./style.css">
+  <!-- タイトルが index になっているのでページを開いた時タブの名前がindexになっている。サイト名にしたい。 -->
   <title>index</title>
 </head>
 
@@ -15,15 +19,19 @@
   <div class="overflow-hidden">
     <header>
       <div class="container">
+        <!-- 空タグは音声読み上げで読まれないので非推奨。何のようそか分かるものを内包するか、title属性をつける -->
         <a href="#" class="nav-close"></a>
+        <!-- title属性があるとより親切（音声読み上げブラウザでよまれるため） -->
         <a href="#" class="header__menu js-menu-btn">
           <i class="fa fa-bars fa-lg"></i>
         </a>
         <div class="header__wrap">
+          <!-- PCのときもSPのときもリンクで良いので、この分け方は不要 -->
           <div class="header__logo-sp">Save Animals in Japan</div>
           <div class="header__logo-pc">
             <a href="./index.html">Save Animals in Japan</a>
           </div>
+          <!-- header__nav-item があるなかで、 nav-item も加える意味がない -->
           <nav class="header__nav js-nav">
             <a href="#message" class="nav-item header__nav-item">コンセプト</a>
             <a href="#animals-list" class="nav-item header__nav-item">絶滅危惧種一覧</a>
@@ -33,6 +41,7 @@
         </div>
       </div>
     </header>
+    <!-- top-bg は hero などが一般的。この子供に連なるようにBEM設計するのが理想 -->
     <div class="top-bg">
       <div class="container">
         <div class="top">
@@ -43,6 +52,7 @@
     <div class="container">
       <div class="message" id="message">
         <div class="message__img col col--12 col-lg--6">
+          <!-- altの値がおかしい -->
           <img class="message__img-0" src="./images/messageowl.png" alt="messageフクロウ">
         </div>
         <div class="message__about col col--12 col-lg--6">
@@ -57,16 +67,20 @@
     <div class="animals-list" id="animals-list">
       <div class="container">
         <div class="animals-list__title">
+          <!-- 見出しの順序的にh1がここにくるのはおかしい。h2が妥当 -->
           <h1 class="hdg">絶滅危惧種一覧</h1>
           <p>30の種が絶滅の危機に晒されています。</p>
         </div>
+        <!-- rows という複数形のラップの中にrowが一個だけなので、この名前は微妙 -->
         <div class="animal-rows">
           <div class="animal-row">
             <div class="col animal-col col--12 col-lg--6 col-xl--4">
               <div class="card">
                 <span class="card__img" style="background-image: url('./images/aoumigame.jpg')"></span>
                 <div class="card__description">
+                  <!-- block不在でオプションだけある。BEM破綻 -->
                   <h2 class="hdg--card">アオウミガメ</h2>
+                  <!-- block不在でオプションだけある。BEM破綻 -->
                   <p class="sentence--card">体内の脂肪が青いためにアオウミガメと呼ばれる。昔から食用とされている。</p>
                 </div>
               </div>
@@ -159,7 +173,9 @@
                 <div class="card">
                   <span class="card__img" style="background-image: url('./images/ishikawagaeru.jpg')"></span>
                   <div class="card__description">
+                    <!-- block不在でオプションだけある。BEM破綻 -->
                     <h2 class="hdg--card">イシカワガエル</h2>
+                    <!-- block不在でオプションだけある。BEM破綻 -->
                     <p class="sentence--card">「日本で一番美しいカエル」と言われる。</p>
                   </div>
                 </div>
@@ -168,7 +184,9 @@
                 <div class="card">
                   <span class="card__img" style="background-image: url('./images/iboimori.jpg')"></span>
                   <div class="card__description">
+                    <!-- block不在でオプションだけある。BEM破綻 -->
                     <h2 class="hdg--card">イボイモリ</h2>
+                    <!-- block不在でオプションだけある。BEM破綻 -->
                     <p class="sentence--card">太古からずっと同じ姿で、「生きた化石」と言われる。</p>
                   </div>
                 </div>
@@ -176,18 +194,23 @@
             </div>
           </div>
         </div>
+        <!-- アクセシビリティの観点からtitle属性をつけるなどしたい -->
         <a class="ac-btn" href="#"></a>
       </div>
     </div>
     <div class="animals-info" id="animals-info">
       <div class="carousel">
+        <!-- 背景が変わるだけの場合、classをわけなくてstyle='background' 直書きでよい -->
         <div class="carousel-A">
           <div class="container">
             <div class="animals-detail">
               <div class="row animals-info__row">
+                <!-- block不在でオプションだけある。BEM破綻 -->
                 <div class="col col-lg--5 col-offset--1 animals-info__col">
                   <div class="plate">
+                    <!-- hdgブロックがないのに装飾だけいるのはおかしい -->
                     <h1 class="hdg--plate animals-info__h1">エゾヒグマ</h1>
+                    <!-- sentenceブロックがないのに装飾だけいるのはおかしい -->
                     <p class="sentence--plate animals-info__p">
                       昼夜共に活動し、休む場所などは決まっておらず、発情期と子育ての時期を除いて、普段は単独で生活をしている。
                     </p>
@@ -201,9 +224,12 @@
           <div class="container">
             <div class="animals-detail">
               <div class="row animals-info__row">
+                <!-- block不在でオプションだけある。BEM破綻 -->
                 <div class="col col-lg--5 col-offset--1 animals-info__col">
                   <div class="plate">
+                    <!-- h1などのクラス名は避けたい。そもそもh1は位置的におかしい。 -->
                     <h1 class="hdg--plate animals-info__h1">オオワシ</h1>
+                    <!-- block不在でオプションだけある。BEM破綻 -->
                     <p class="sentence--plate animals-info__p">
                       尾羽が矢羽として利用されることもあった[3][4]。ロシアでは毛皮用のテンが罠にかかった際に食害することもあり、害鳥とみなされることもある。
                     </p>
@@ -217,9 +243,12 @@
           <div class="container">
             <div class="animals-detail">
               <div class="row animals-info__row">
+                <!-- block不在でオプションだけある。BEM破綻 -->
                 <div class="col col-lg--8 col-offset--1 animals-info__col">
                   <div class="plate">
+                    <!-- h1などのクラス名は避けたい。そもそもh1は位置的におかしい。 -->
                     <h1 class="hdg--plate animals-info__h1">クロイワトカゲモドキ</h1>
+                    <!-- block不在でオプションだけある。BEM破綻 -->
                     <p class="sentence--plate animals-info__p">
                       ヤモリでは珍しく瞼を閉じることができる。また、手足に吸盤がないため地面に住んでいる。めずらしいクロイワトカゲモドキはペットとしても人気で、捕獲されたりする。
                     </p>
@@ -230,11 +259,15 @@
           </div>
         </div>
       </div>
+      <!-- JSで捕捉されるIDは js- プレフィックスが欲しい -->
       <div id="arrows">
         <div class="slick-next">
+          <!-- alt に次へ、などがほしい（アクセシビリティ対策） -->
+          <!-- 画像ファイル名がかなローマ字なのが気持ち悪い -->
           <img src="./images/migisankaku.png" alt="">
         </div>
         <div class="slick-prev">
+          <!-- alt に前へ、などがほしい（アクセシビリティ対策） -->
           <img src="./images/hidarisankaku.png" alt="">
         </div>
       </div>
@@ -262,25 +295,37 @@
             </div>
           </div>
           <div class="knowledge-wrap">
+            <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
             <div class="plate col--12 col-lg--6 knowledge-plate js-tab-content js-tab-content--a tab-content--active">
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <h1 class="hdg--plate">絶滅危惧種とは</h1>
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <div class="sentence--plate">
                 <p>絶滅危惧種の定義の詳細は「現在の状態をもたらした圧迫要因が引き続き作用するならば、その存続は困難なもの」とされている[1]。</p>
                 <p>
                   広義の絶滅危惧種は「絶滅のおそれのある種」と呼ばれ[3]、レッドリストで「絶滅危惧IA類(Critically endangered, CR)」「絶滅危惧IB類(Endangered, EN)」「絶滅危惧II類(Vulnerable, VU)」カテゴリーのいずれかに分類された生物種のことをいう[3][4]。狭義の絶滅危惧種は、IUCNレッドリストのEndangeredカテゴリーの訳語として用いられることもある[2]。また、日本の環境庁(現・環境省)が1991年に発表したレッドリストでは「絶滅危惧種」というカテゴリー名が使用されていた</p>
               </div>
             </div>
+            <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
             <div class="plate col--12 col-lg--6 knowledge-plate js-tab-content js-tab-content--b">
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <h1 class="hdg--plate">なぜ絶滅するのか</h1>
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <p class="sentence--plate">森林伐採、開発、環境汚染、乱獲、密猟、外来種による在来種の減少、里山の放置によって絶滅が起きるとされています。</p>
             </div>
+            <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
             <div class="plate col--12 col-lg--6 knowledge-plate js-tab-content js-tab-content--c">
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <h1 class="hdg--plate">なぜ救うべきなのか</h1>
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <p class="sentence--plate">
                 人間を含むすべての生物は地球とともに長い時間をかけて、今のような形になりました。生物の種は生命の長い歴史の結晶であり、それ自体がかけがえのない価値を持っています。私たちの暮らしは、多様な種が関わりあいながら形成する自然の恵みに支えられています。複雑なバランスで成り立っている自然を守るためには、一つ一つの種を絶滅から守っていくことが大切です。</p>
             </div>
+            <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
             <div class="plate col--12 col-lg--6 knowledge-plate js-tab-content js-tab-content--d">
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <h1 class="hdg--plate">どうすれば良いのか</h1>
+              <!-- ブロックがないのに装飾だけあるのはBEM破綻している -->
               <p class="sentence--plate">資源の無駄使いをやめて、環境汚染を防ぐことでこれまでの生態系を取り戻すことができ、絶滅危惧種にとって生きやすい環境になります。まずは身の回りの川を綺麗にしたり、無駄なものを消費しないなど、エコでクリーンな暮らしを目指しましょう。</p>
             </div>
           </div>
@@ -326,14 +371,17 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__nav">
+            <!-- nav-item と footer__nav-item 統合できないか -->
             <a href="#message" class="nav-item footer__nav-item">コンセプト</a>
             <a href="#animals-list" class="nav-item footer__nav-item">絶滅危惧種一覧</a>
             <a href="#animals-knowledge" class="nav-item footer__nav-item">知識</a>
             <a href="#contact" class="nav-item footer__nav-item">お問い合わせ</a>
           </div>
+          <!-- コピー文字は &copy; で表現するのがスタンダード -->
           <p class="footer__copyright">
             © Deer, Inc.
           </p>
+          <!-- 空Divは音声読み上げで読まれないのでよくない。title属性か、不可視のspanを内包し、「トップへ戻る」などと記載する。 -->
           <div class="top-btn">
           </div>
         </div>

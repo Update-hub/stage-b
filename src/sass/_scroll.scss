@@ -1,8 +1,11 @@
+// 整形されたし
+
 .top-btn{
   position: fixed;
   z-index:999;
   margin: 0 auto;
   background-color: rgba(0,0,0,0.3);
+  // divなのでもともとblock
   display: block;
   height: 40px;
   width: 40px;
@@ -10,11 +13,13 @@
   bottom:16px;
   border-radius:50%;
   box-shadow: $shadow-md;
+  // background系まとめられる
   background-repeat: no-repeat;
   background-image: url('./images/uesannkaku35.png');
   cursor:pointer;
   
   //背景に合うようにリサイズ
+  // cover でよい
   background-size: 100% 100%;
   @include pc(){
     height: 80px;

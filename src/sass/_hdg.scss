@@ -1,3 +1,5 @@
+// 全体的に整形されたし
+
 .hdg {
   font-size: 24px;
   padding-bottom: 16px;
@@ -30,9 +32,12 @@
   &--plate {
     font-size: 16px;
     line-height: 24px;
+    // 省略 16px(上) 16px(左右) 8px(下)
+    // 3つにすると、上、左右、下の指定になる。
     padding: 16px 16px 8px 16px;
     color: #fff;
     @include pc() {
+      // 3つにすると、上、左右、下の指定になる。省略可能
       padding: 24px 24px 16px 24px;
       line-height: 44px;
       font-size: 34px;

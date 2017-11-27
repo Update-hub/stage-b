@@ -1,3 +1,5 @@
+// 全体的に整形されたし
+
 header{
   height:40px;
   background-color:rgba(0,0,0,0.3);
@@ -8,6 +10,7 @@ header{
   }
 }
 
+// &つかおう
 .header__wrap{
   display: flex; /* flexbox化 */
   color:#fff;
@@ -21,12 +24,14 @@ header{
     height: 64px;
   }
   //表示崩れ対策
+  // インデントおかしい
   @include tb(){
   padding: 0 32px;
 }
 
 }
 
+// &つかおう
 .header__menu{
   position: relative;
   align-self: flex-start;
@@ -42,6 +47,7 @@ header{
   }
 }
 
+// &つかおう
 .header__logo{
   &-sp {
     display: block;
@@ -61,6 +67,7 @@ header{
   }
 }
 
+// &つかおう
 .header__nav{
   @include sp(){
    display: block;
@@ -70,6 +77,7 @@ header{
    left: 0;
    z-index: 9999;/*最前面に*/
    width: 75%;/*インレイを75%に*/
+  //  未調整状態を誤認させるコメントなので表現を変える
    max-width: 240px;/*最大幅（調整してください）*/
    height: 100%;
    background: #fff;/*背景色*/
@@ -89,6 +97,8 @@ header{
     display: flex;
   }
 }
+
+// &つかおう
 .header__nav-item{
     display:block;
     line-height:48px;

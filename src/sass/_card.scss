@@ -7,18 +7,23 @@
   box-shadow: $shadow-md;
   margin: 0 auto;
   @include pc() {
+    // これが必要なシーンとは
     max-width: 312px;
   }
 
+  // &__img
   .card__img {
     min-height: 140px;
+    // まとめてかける background: center/cover no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    // short: border-radius: 3px 3px 0 0;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
   }
 
+  // &__description
   .card__description {
     padding: 0 16px;
     @include pc{

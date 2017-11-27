@@ -1,3 +1,4 @@
+// ダブルクォーテーションになっている
 $(function(){
   $(".ac-btn").on("click", function() {
     $(".additional-row").slideToggle();

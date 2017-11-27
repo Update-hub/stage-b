@@ -8,12 +8,14 @@
     overflow-x: hidden;
   }
 
+  // 子供でいいのでは __item
   &-item {
     font-size: 12px;
     line-height: 48px;
     flex-grow: 1;
     border-right: 1px solid #ddd;
     white-space: nowrap;
+    // 単に子供にしたいばあい & は不要
     & a {
       display: inline-block;
       text-align: center;
@@ -25,6 +27,7 @@
     }
 
     //aタグの最後の要素に適用
+    // :last-child ではだめなのか
     &--last {
       border-right: none;
     }

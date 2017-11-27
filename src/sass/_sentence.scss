@@ -20,8 +20,10 @@
     font-size: 12px;
     margin-bottom: 0;
     color: #fff;
+    // 省略可能
     padding:0px 16px 8px 16px;
     @include pc() {
+      // 省略可能
       padding:0px 24px 24px 24px;
       font-size: 14px;
     }

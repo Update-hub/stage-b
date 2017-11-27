@@ -6,6 +6,7 @@ $(function(){
    return false;
   });
 
+  // このevent引数は使われていない
   $('.nav-close').on('click touchstart', function(event) {
     $('.js-nav').removeClass('open');
     $('.nav-close').removeClass('open');

@@ -1,10 +1,13 @@
+// vsc の format コマンドで整形されたし
+
 .animals-info{
-  //セクション区切りの余白
+  //セクション区切りの余白 <- どういう意味？
   position: relative;
   &__row{
       position: relative;
       height:378px;
       margin:0px;
+      // インデントがおかしい
       @include pc(){
       margin:0 -16px;
       height: 488px;
@@ -13,7 +16,9 @@
   &__col{
       padding:0;
       position:absolute;
+      // 0の場合px不要
       bottom:0px;
+      // インデントおかしい
         @include pc(){
         padding:0 16px;
         bottom:32px;
@@ -25,10 +30,12 @@
     
   }
   &__h1{
+    // 省略してこうかける 16px 16px 8px
     padding:16px 16px 8px 16px;
     line-height: 24px;
     @include pc(){
     line-height:44px;
+    // 省略してこうかける 24px 14px 16px
     padding:24px 24px 16px 24px;
     }
   }
@@ -39,6 +46,7 @@
     line-height: 24px;
     @include pc(){
       line-height: 24px;
+      // 省略してこうかける 0 24px 24px
       padding:0px 24px 24px 24px;
     }
   }
@@ -46,49 +54,65 @@
 
 .carousel{
   &-A{
+    // ルート相対パス指定がのぞましい　
+    // ショートハンド使える background: url() center/cover no-repeat;
     background-image:url(./images/ezohiguma.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     @include pc(){
+      // px不要
       background-position: 0px 0px;
     }
   }
   &-B{
+    // ルート相対パス指定がのぞましい　
+    // ショートハンド使える background: url() center/cover no-repeat;
     background-image:url(./images/oowashi.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     @include pc(){
+      // px不要
       background-position: 0px 0px;
     }
   }
   &-C{
+    // ルート相対パス指定がのぞましい　
+    // ショートハンド使える background: url() center/cover no-repeat;
     background-image:url(./images/tokage.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     @include pc(){
+      // px不要
       background-position: 0px 0px;
     }
   }
 }
 
 .animals-detail{
+  // px不要
   padding:0px;
   margin: 0 -32px;
   //表示崩れ対策
   @media screen and (min-width: 1128px){
     padding: 0 32px;
+    // px不要
     margin: 0px;
     box-sizing:border-box;
   }
 }
-//slick 設定
+//slick 設定 <- このコメントの位置、書き方的にピンとこない。やるならもっと目立つ装飾でセパレートしたほうがよい
+
+// -------------------
+// Slick 設定
+// -------------------
 
 
 //左右の矢印　設定
 
+// コメントの書き方がなぜかブロックコメント。問題ないが、ぶれているのは理由が？
 /*左右の矢印の色を変える*/
 .slick-prev:before,
 .slick-next:before {
@@ -97,6 +121,7 @@
 
 .slick-prev, .slick-next {
   width:56px; /* 画像幅 */
+  // セミコロンがない。なくてもよいが、他に合わせてセミコロン欲しい
   height:56px /* 画像高さ */
 }
 .slick-prev:before, .slick-next:before {
@@ -132,10 +157,12 @@
 .slick-dotted.slick-slider
 {
   //defaultの余白を打ち消し
+  // px不要
     margin-bottom: 0px;
 }
 .slick-dots {
   font-size:8px;
+  // px不要
   margin-bottom:0px;
   right:8px;
   bottom: 8px;

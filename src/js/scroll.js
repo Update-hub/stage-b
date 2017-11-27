@@ -1,3 +1,8 @@
+// ダブルクォーテーションが混在している
+// インデントがスペース3つになっている
+// 全体的にコードを整形したほうがよい
+// Editorconfigをエディタに入れてformat叩いているか？
+
 $(function(){
   // #で始まるアンカーをクリックした場合に処理
   $('.nav-item').click(function() {
@@ -19,6 +24,7 @@ $(function(){
    var windowH = window.innerHeight;
    topBtn.hide();
    //スクロールが100に達したらボタン表示
+    // on イベントを使う   
    $(window).scroll(function () {
        if ($(this).scrollTop() > windowH) {
            topBtn.fadeIn();
@@ -27,6 +33,7 @@ $(function(){
        }
    });
    //スクロールしてトップ
+// on イベントを使う
    topBtn.click(function () {
        $('body,html').animate({
            scrollTop: 0

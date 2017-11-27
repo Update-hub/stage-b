@@ -1,3 +1,5 @@
+// 全体的に整形されたし format, beautifyなどで
+
 .animals-list{
   padding: 32px 0;
   background-color:#fafafa;
@@ -32,6 +34,7 @@
   @include pc(){
 //flexの性質を利用して全て同じ高さに
     display:flex;
+    // padding: 0 16px 16px; 省略可能
     padding: 0 16px 16px 16px; 
   }
 }
@@ -49,6 +52,7 @@
   width: 40px;
   border-radius:50%;
   box-shadow: $shadow-md;
+  // 省略可能 url() center/cover no-repeat;
   background-repeat: no-repeat;
   background-image: url('./images/shitasankaku.png');
   //背景に合うようにリサイズ
@@ -59,7 +63,7 @@
  }
   &.up{
      //画像は三角マークのみ
-     
+    //  謎の空行
     background-image: url('./images/uesankaku.png');
     display:none;
     @include pc(){

@@ -1,3 +1,5 @@
+// 全体的に整形されたし
+
 .footer{
   background-color: #ececec;
 
@@ -15,8 +17,10 @@
   &__nav{
     font-size:13px;
     line-height:19px;
+    // padding-top: 16px でよい気が
     padding:16px 0 0 0;
     @include pc(){
+      // 0のpx不要
       padding: 32px 32px 0px 32px;
     }
 
