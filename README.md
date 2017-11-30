@@ -32,6 +32,7 @@ issue作成、仕様確認|11/29
 - Shibata
 - iwamotoW
 - Fujii
+- Kumura
 
 ## Docs
 
