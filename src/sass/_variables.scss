@@ -3,12 +3,9 @@ $shadow-md: 0 3px 6px rgba(#000, .16);
 
 //mixins breakpoint
 $sp-width: 599px;
-$desktop-width: 600px;
-$tablet-width: 768px;
+$tablet-width: 600px;
+$desktop-width: 768px;
 $Extralarge-width: 992px;
-
-//スクロールバーの幅のマイナス値取得
-$scroll-width: calc(-100vw + 100%);
 
 //色指定
 $color-base: #F03861;
