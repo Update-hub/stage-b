@@ -16,6 +16,12 @@
   }
 }
 
+@mixin tb-lg {
+  @media (min-width: #{$tablet-large-width}) {
+    @content;
+  }
+}
+
 @mixin xl {
   @media (min-width: #{$Extralarge-width}) {
     @content;
