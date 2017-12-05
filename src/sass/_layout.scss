@@ -1,5 +1,6 @@
 .container {
-  max-width: 1000px;
+  max-width: $desktop-width;
+  width: auto;//flexboxgrid.min.cssを外せるなら要らない
   padding: 0 32px;
   box-sizing: border-box;
   margin: 0 auto;
