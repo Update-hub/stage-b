@@ -1,9 +1,11 @@
 .container {
-  max-width: $desktop-width;
-  width: auto;//flexboxgrid.min.cssを外せるなら要らない
-  padding: 0 32px;
+  max-width: $pc-large-width;
+  padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto;
+  @include tb(){
+    padding: 0 32px
+  }
 }
 
 .row {
@@ -17,8 +19,9 @@
 --------------------------------------------------------------------------------------------------------------- */
 //col--12         sp時カラム12個分
 //col-tb--8       タブレット(小)時カラム8個分
-//col-tb-lg--6    タブレット(大)時カラム6個分
+//col-tblg--6    タブレット(大)時カラム6個分
 //col-pc--3       PC時カラム3個分
+//col-pclg
 
 //col-offset--2
 //col-tb-offset--2    それぞれの表示時左に数値分カラムのマージンをとる
@@ -34,7 +37,7 @@
       margin-left: calc(#{$i}/12 * 100%);
     }
   }
-  $size-types : (tb: $tablet-width, tb-lg: $tablet-large-width, pc: $desktop-width);
+  $size-types : (tb: $tablet-width, tblg: $tablet-large-width, pc: $pc-width, pclg: $pc-large-width);
   @each $size-type, $width in $size-types {
     @for $i from 1 through 12 {
       @media (min-width: #{$width}){

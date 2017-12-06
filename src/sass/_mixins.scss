@@ -4,26 +4,26 @@
   }
 }
 
-@mixin pc {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
 @mixin tb {
   @media (min-width: #{$tablet-width}) {
     @content;
   }
 }
 
-@mixin tb-lg {
+@mixin tblg {
   @media (min-width: #{$tablet-large-width}) {
     @content;
   }
 }
 
-@mixin xl {
-  @media (min-width: #{$Extralarge-width}) {
+@mixin pc {
+  @media (min-width: #{$pc-width}) {
+    @content;
+  }
+}
+
+@mixin pclg {
+  @media (min-width: #{$pc-large-width}) {
     @content;
   }
 }
