@@ -23,6 +23,7 @@ issue作成、仕様確認|11/29
 開発|~12/11
 検品|12/12
 修正|12/13
+クライアントチェック|12/13
 リリース|12/15
 リリース後対応|~12/17
 
@@ -38,10 +39,10 @@ issue作成、仕様確認|11/29
 
 https://drive.google.com/drive/folders/0BwhcbXxSdjGiVzFzc24tRWN0UVE?usp=sharing
 
-##デザイン
+## デザイン
 
 https://xd.adobe.com/spec/14ca0be1-7989-4f2f-9fd4-7bfd195b81a3
 
-##連絡事項
+## 連絡事項
 
 https://github.com/deerboy/stage-b/issues/87
