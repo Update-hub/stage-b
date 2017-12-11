@@ -1,0 +1,136 @@
+//-------------------------
+//モーダルページ内設定
+//-------------------------
+.modal-body{
+  background: $color-main;
+  overflow: hidden;
+}
+.modal-container{
+  box-sizing: border-box;
+  padding: 0 8px;
+  @include tb(){
+    padding: 0 16px;
+  }
+  @include pc() {
+    padding: 0 32px;
+  }
+}
+.modal-header{
+  background: $color-accent;
+  position: relative;
+  height: 120px;
+  margin-bottom: 40px;
+  @include tb(){
+    margin-bottom: 80px;
+  }
+  &__btn-close{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    background-image: url(../images/close.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  &__animal-name{
+    text-align: center;
+    color: $color-main;
+    padding: 36px 0;
+    font-size: 24px;
+    line-height: 36px;
+    @include tb(){
+      font-size: 32px;
+      line-height: 48px;
+    }
+    @include tblg(){
+      padding: 24px 0;
+      line-height: 72px;
+      font-size: 48px;
+    }
+  }
+}
+.modal-hero{
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background: $color-accent;
+  width: 264px;
+  height: 264px;
+  @include tb(){
+    margin-bottom: 80px;
+    width: 256px;
+    height: 256px;
+  }
+  @include pclg(){
+    width: 310px;
+    height: 310px;
+  }
+}
+.animal-detail{
+  &__title{
+    font-size: 18px;
+    line-height: 29px;
+    border-bottom: 3px solid $color-accent;
+    margin-bottom: 16px;
+    @include tb(){
+      margin-bottom: 32px;
+      font-size: 24px;
+      line-height:37px;
+    }
+    @include tblg(){
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+  &__description{
+      padding-bottom: 8px;
+      font-size: 14px;
+      line-height: 24px;
+    @include tb(){
+      padding-bottom: 32px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @include pclg(){
+      font-size: 18px;
+      line-height: 32px;
+    }
+    &--p1{
+      padding-bottom: 16px;
+    }
+    &--p2{
+      padding-bottom: 16px;
+    }
+  }
+  &__classification{
+      text-align: center;
+      display: block;
+      padding-bottom: 8px;
+      box-sizing: border-box;
+    @include tb(){
+      padding-bottom: 32px;
+    }
+    @include tblg(){
+      display: none;
+    }
+    &__img{
+      width: 200px;
+      height: 200px;
+    }
+    &__link{
+      display: block;
+    }
+    &--pc{
+      text-align: center;
+      padding-bottom: 8px;
+      display: none;
+      @include tblg(){
+        display: block;
+        padding-bottom: 32px;
+      }
+    }
+  }
+}
