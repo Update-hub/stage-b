@@ -61,7 +61,7 @@ gulp.task('watch', ['js','sass','imagemin','html'],  function() {
   watch(['./src/images/**/*'], function() {
     gulp.start('imagemin');
   });
-  watch(['./src/scripts/**/*.js'], function() {
+  watch(['./src/js/**/*.js'], function() {
     gulp.start('js');
   });
   
