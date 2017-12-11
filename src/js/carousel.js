@@ -1,16 +1,14 @@
 $(function() {
-    var slicks = $('.carousel').slick({
+  if (window.innerWidth < 600) {
+    for (let index = 0; index < 3; index++) {
+      $('.js-carousel-' + index).wrapAll('<div class=""></div>');
+    }
+    let slicks = $('.js-carousel').slick({
     infinite: true, // スライドをループさせるか
-    autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: false,
     dots: true,
     slidesToShow: 1,
     appendArrows: $('#arrows')
     });
-    $('.slick-next').on('click', function () {
-      slicks.slick('slickNext');
-    });
-    $('.slick-prev').on('click', function () {
-      slicks.slick('slickPrev');
-    });
+  }
 });
