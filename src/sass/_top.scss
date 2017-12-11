@@ -1,0 +1,28 @@
+.top {
+  //下はcard-listのmarginで補う
+  padding-top: 80px;
+  text-align: center;
+  color: $color-main;
+
+  //タイトルに関する
+  &__title {
+    font-size: 64px;
+    line-height: 80px;
+    padding-bottom: 24px;
+
+    //文字が出た場合自動折り返し
+    word-wrap: break-word;
+  }
+
+  //メッセージに関する
+  &__sentence {
+    font-size: 16px;
+  }
+  .br {
+    display: none;
+    @include tb(){
+      display:block;
+    }
+  }
+
+}
