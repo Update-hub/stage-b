@@ -7,21 +7,21 @@ function setcolorbox() {
   var width = window.innerWidth;
   if (width < 600) {
     modalWidth = width - 32;
-    modalHeight = 1502;
+    modalHeight = 1427;
   }
   else {
     modalWidth = width - 64;
     if (width < 768) {
-      modalHeight =1464;
+      modalHeight =1540;
     }
     else if(width <1068){
-      modalHeight =1256;
+      modalHeight =1290;
     }
     else if(width< 1284){
-      modalHeight =1192;
+      modalHeight =1240;
     }
     else{
-      modalHeight =1422;
+      modalHeight =1360;
     }
   }
 

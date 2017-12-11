@@ -3,6 +3,7 @@
 //-------------------------
 .modal-body{
   background: $color-main;
+  overflow: hidden;
 }
 .modal-container{
   box-sizing: border-box;
@@ -108,6 +109,7 @@
       text-align: center;
       display: block;
       padding-bottom: 8px;
+      box-sizing: border-box;
     @include tb(){
       padding-bottom: 32px;
     }
@@ -115,8 +117,8 @@
       display: none;
     }
     &__img{
-      width: 240px;
-      height: 240px;
+      width: 200px;
+      height: 200px;
     }
     &__link{
       display: block;
@@ -132,9 +134,3 @@
     }
   }
 }
-.map{
-  padding-bottom: 80px;
-}
-
-
-
