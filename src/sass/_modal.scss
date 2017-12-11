@@ -1,3 +1,6 @@
+//-------------------------
+//モーダルページ内設定
+//-------------------------
 .modal-body{
   background: $color-main;
 }
@@ -5,7 +8,7 @@
   box-sizing: border-box;
   padding: 0 8px;
   @include tb(){
-  padding: 0 16px;
+    padding: 0 16px;
   }
   @include pc() {
     padding: 0 32px;

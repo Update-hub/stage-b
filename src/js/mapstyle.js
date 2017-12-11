@@ -1,4 +1,6 @@
-//Google Map初期設定関数
+//------------------------
+//Google Map API初期設定関数
+//------------------------
 function initMap() {
   var mycenter = { lat: 37.740720, lng: 136.962294 };
   var map = new google.maps.Map(document.getElementById('map__canvas'), {
@@ -8,7 +10,7 @@ function initMap() {
   });
 //円マーカーセット
   setMarkers(map);
-//リサイズ完了時にGoogleMapのセンタリングを行う
+//リサイズ完了時にMapのセンタリングを行う
   google.maps.event.addDomListener(window, "resize", function() {
     var center = map.getCenter();
     google.maps.event.trigger(map, "resize");

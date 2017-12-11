@@ -1,4 +1,6 @@
-//colorbox設定　作成前に大きさを決定している必要がある
+//--------------------------------------------
+//colorbox設定
+//--------------------------------------------
 function setcolorbox() {
   var modalWidth;
   var modalHeight;
@@ -22,7 +24,7 @@ function setcolorbox() {
       modalHeight =1422;
     }
   }
-  
+
   //インラインフレームにモーダルを表示
   $('.card-wrap-btn').colorbox({
     opacity: 0.7,
