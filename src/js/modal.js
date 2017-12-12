@@ -29,6 +29,7 @@ function setcolorbox() {
   $('.card-wrap-btn').colorbox({
     opacity: 0.7,
     iframe: true,
+    returnFocus:false,
     innerWidth: modalWidth,   //幅の指定
     innerHeight: modalHeight //高さの指定
   });
