@@ -2,9 +2,8 @@
 //Google Map API初期設定関数
 //------------------------
 function initMap() {
-  var mycenter = { lat: 37.740720, lng: 136.962294 };
   var map = new google.maps.Map(document.getElementById('map__canvas'), {
-    zoom: 4,
+    zoom: myzoom,
     center: mycenter,
     mapTypeId: 'terrain'
   });
