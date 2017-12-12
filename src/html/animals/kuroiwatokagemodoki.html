@@ -1,0 +1,80 @@
+<!-- モーダルウィンドウ用HTML　動物ごとに作成 -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>Kuroiwa Tokagemodoki</title>
+</head>
+
+<body class="modal-body">
+  <div class="modal-header">
+    <h1 class="modal-header__animal-name">クロイワトカゲモドキ</h1>
+    <div class="modal-header__btn-close" title="閉じるボタン"></div>
+  </div>
+  <div class="modal-hero">
+    <img class="modal-hero__logo" src="../images/kuroiwatokagemodoki.png" alt="クロイワトカゲモドキシルエット">
+  </div>
+  <div class="animal-detail">
+    <div class="modal-container">
+      <div class="animal-detail__title">
+        <h2>原始的なヤモリの仲間</h2>
+      </div>
+      <div class="row">
+        <div class="col col--12 col-tb--12">
+          <div class="animal-detail__classification">
+            <ul>
+              <li>学名：Goniurosaurus kuroiwae</li>
+              <li>分類：爬虫綱有鱗目 トカゲモドキ科</li>
+              <li>IUCN：VU 危急種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/kuroiwatokagemodokisub.jpg" alt="クロイワトカゲモドキ">
+            <a class="animal-detail__classification__link" href="https://commons.wikimedia.org/wiki/File:GoniurosaurusAT.JPG">出典：wikipedia</a>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--12 col-tblg--6 col-pc--7">
+          <div class="animal-detail__description">
+            <p class="animal-detail__description--p1">
+              全長は14~19cmで体重は7～17gの体色は黒褐色で黄色や桃白色などの縦縞や横縞が入る天然記念物、捕獲や飼育は無論、触ってはいけない、とても貴重な生物なので観察するに止めたい。
+            </p>
+            <p class="animal-detail__description--p2">
+              ヤモリの仲間では珍しく瞼を閉じることができ、手足には吸盤がなく地上を歩き周り、エサは動物食でヤスデなど土壌動物を捕食する、尾の先に毒があると怖れられていたが無毒のおとなしい動物である。
+            </p>
+            <p>
+              開発による森林伐採、人為的に移入された動物(ネコ、マングース)による捕食、ペット用を目的とした密猟によりその生息数は激減している。
+            </p>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--6 col-tblg--6 col-pc--5">
+          <div class="animal-detail__classification--pc">
+            <ul>
+              <li>学名：Goniurosaurus kuroiwae</li>
+              <li>分類：爬虫綱有鱗目 トカゲモドキ科</li>
+              <li>IUCN：VU 危急種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/kuroiwatokagemodokisub.jpg" alt="クロイワトカゲモドキ">
+            <a class="animal-detail__classification__link" href="https://commons.wikimedia.org/wiki/File:GoniurosaurusAT.JPG">出典：wikipedia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="modal-container">
+      <div id="map__canvas" title="Google Map">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/dataset/kuroiwatokagemodoki.js"></script>
+  <script type="text/javascript" src="../js/mapstyle.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaEgm7qZ7JrZK8V1Ag32PabhfIANq7p64&callback=initMap">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!-- モーダルウィンドウ用HTML　動物ごとに作成 -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>Ezo Okojo</title>
+</head>
+
+<body class="modal-body">
+  <div class="modal-header">
+    <h1 class="modal-header__animal-name">エゾオコジョ</h1>
+    <div class="modal-header__btn-close" title="閉じるボタン"></div>
+  </div>
+  <div class="modal-hero">
+    <img class="modal-hero__logo" src="../images/ezookojo.png" alt="エゾオコジョシルエット">
+  </div>
+  <div class="animal-detail">
+    <div class="modal-container">
+      <div class="animal-detail__title">
+        <h2>小さな捕食者</h2>
+      </div>
+      <div class="row">
+        <div class="col col--12 col-tb--12">
+          <div class="animal-detail__classification">
+            <ul>
+              <li>学名：Mustela erminea orientalis</li>
+              <li>分類：ネコ目 イタチ科</li>
+              <li>IUCN：NT 準絶滅危惧種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/ezookojosub.jpg" alt="エゾオコジョ">
+            <a class="animal-detail__classification__link" href="http://free-photos.gatag.net/2015/03/16/200000.html">出典：GATAG</a>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--12 col-tblg--6 col-pc--7">
+          <div class="animal-detail__description">
+            <p class="animal-detail__description--p1">
+              オコジョはユーラシア北部や北アメリカなどに生息している。うち、北海道に生息しているものをエゾオコジョという。通称「エゾイタチ」。イタチより体は小さいが、気性は荒く、自分よりも大きな動物を捕まえる。
+            </p>
+            <p class="animal-detail__description--p2">
+              冬になると体毛が生え変わり、茶色い毛が抜け落ちて真っ白になる。オコジョの白い毛皮をいくつも縫い合わせたものを「アーミン」と呼び、ヨーロッパでは古くから、貴族が身にまとう高級品として重宝された。
+            </p>
+            <p>
+              エゾオコジョ減少の背景には、森林伐採などで住処を追われたと同時に、毛皮ブームによって海外から大量のミンクが輸入さた結果、ミンク、つまりエゾオコジョの外敵が繁殖し、生活圏を奪ったことも要因とされている。
+            </p>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--6 col-tblg--6 col-pc--5">
+          <div class="animal-detail__classification--pc">
+            <ul>
+              <li>学名：Mustela erminea orientalis</li>
+              <li>分類：ネコ目 イタチ科</li>
+              <li>IUCN：NT 準絶滅危惧種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/ezookojosub.jpg" alt="エゾオコジョ">
+            <a class="animal-detail__classification__link" href="http://free-photos.gatag.net/2015/03/16/200000.html">出典：GATAG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="modal-container">
+      <div id="map__canvas" title="Google Map">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/dataset/ezookojo.js"></script>
+  <script type="text/javascript" src="../js/mapstyle.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaEgm7qZ7JrZK8V1Ag32PabhfIANq7p64&callback=initMap">
+  </script>
+
+</body>
+
+</html>

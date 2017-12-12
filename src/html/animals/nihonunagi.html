@@ -1,0 +1,80 @@
+<!-- モーダルウィンドウ用HTML　動物ごとに作成 -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>Nihon Unagi</title>
+</head>
+
+<body class="modal-body">
+  <div class="modal-header">
+    <h1 class="modal-header__animal-name">ニホンウナギ</h1>
+    <div class="modal-header__btn-close" title="閉じるボタン"></div>
+  </div>
+  <div class="modal-hero">
+    <img class="modal-hero__logo" src="../images/nihonunagi.png" alt="ニホンウナギシルエット">
+  </div>
+  <div class="animal-detail">
+    <div class="modal-container">
+      <div class="animal-detail__title">
+        <h2>謎に包まれた生態</h2>
+      </div>
+      <div class="row">
+        <div class="col col--12 col-tb--12">
+          <div class="animal-detail__classification">
+            <ul>
+              <li>学名：Anguilla japonica</li>
+              <li>分類：ウナギ目 ウナギ科</li>
+              <li>IUCN：EN 絶滅危惧種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/nihonunagisub.jpg" alt="ニホンウナギ">
+            <a class="animal-detail__classification__link" href="https://commons.wikimedia.org/wiki/File:Anguilla_japonica.jpg">出典：wikipedia</a>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--12 col-tblg--6 col-pc--7">
+          <div class="animal-detail__description">
+            <p class="animal-detail__description--p1">
+              およそ2000年前、哲学者アリストテレスは「動物誌」のなかで「ウナギは泥の中から自然発生する」と唱えた。ウナギはどういった暮らしぶりをするのか、現在に至るまで未解明な部分の多い生物である。
+            </p>
+            <p class="animal-detail__description--p2">
+              ニホンウナギは日本各地をはじめ、中国や朝鮮半島に分布する。5〜10年ほどは淡水で生活し、産卵期を迎えると海へと下る。背中は暗色、腹は白色で、全身を「ムチン」というタンパク質のヌメりに覆われている。
+            </p>
+            <p>
+              孵化して間もない個体は「レプケトファルス」（葉形幼生）と呼ばれ、柳の葉っぱのような形をしている。その後、細長くて半透明な「シラスウナギ」（稚魚）へと変態し、なじみあるウナギの姿へと成長していく。
+            </p>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--6 col-tblg--6 col-pc--5">
+          <div class="animal-detail__classification--pc">
+            <ul>
+              <li>学名：Anguilla japonica</li>
+              <li>分類：ウナギ目 ウナギ科</li>
+              <li>IUCN：EN 絶滅危惧種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/nihonunagisub.jpg" alt="ニホンウナギ">
+            <a class="animal-detail__classification__link" href="https://commons.wikimedia.org/wiki/File:Anguilla_japonica.jpg">出典：wikipedia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="modal-container">
+      <div id="map__canvas" title="Google Map">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/dataset/nihonunagi.js"></script>
+  <script type="text/javascript" src="../js/mapstyle.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaEgm7qZ7JrZK8V1Ag32PabhfIANq7p64&callback=initMap">
+  </script>
+
+</body>
+
+</html>

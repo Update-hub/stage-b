@@ -1,0 +1,80 @@
+<!-- モーダルウィンドウ用HTML　動物ごとに作成 -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>Shima Hukurou</title>
+</head>
+
+<body class="modal-body">
+  <div class="modal-header">
+    <h1 class="modal-header__animal-name">シマフクロウ</h1>
+    <div class="modal-header__btn-close" title="閉じるボタン"></div>
+  </div>
+  <div class="modal-hero">
+    <img class="modal-hero__logo" src="../images/shimahukurou.png" alt="シマフクロウシルエット">
+  </div>
+  <div class="animal-detail">
+    <div class="modal-container">
+      <div class="animal-detail__title">
+        <h2>村の守り神</h2>
+      </div>
+      <div class="row">
+        <div class="col col--12 col-tb--12">
+          <div class="animal-detail__classification">
+            <ul>
+              <li>学名：Ketupa blakistoni</li>
+              <li>分類：フクロウ目 フクロウ科</li>
+              <li>IUCN：CR 絶滅寸前種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/shimahukurousub.jpg" alt="シマフクロウ">
+            <a class="animal-detail__classification__link" href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Wiki-shimafukurou.jpg">出典：wikipedia</a>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--12 col-tblg--6 col-pc--7">
+          <div class="animal-detail__description">
+            <p class="animal-detail__description--p1">
+              全身の羽衣は灰褐色で全長約70cm､翼開長180cmに達する日本最大級のフクロウ、日本では北海道に分布しており環境は地域によって異なるが、主食の魚類が多いことだけはどの地域にも共通している。
+            </p>
+            <p class="animal-detail__description--p2">
+              古来、アイヌ民族の人々からはコタンコルカムイ（村を守護する神)と言われており、かつては村落の守護神として北海道全域に生息していたと考えられている。
+            </p>
+            <p>
+              河川沿いや湖沼周辺の森林に生息し雪におおわれる冬にも凍らない水域が必要であり、森林伐採による営巣木の減少と河川改修、ダム建設による餌の減少が生息を脅かす要因になっている。
+            </p>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--6 col-tblg--6 col-pc--5">
+          <div class="animal-detail__classification--pc">
+            <ul>
+              <li>学名：Ketupa blakistoni</li>
+              <li>分類：フクロウ目 フクロウ科</li>
+              <li>IUCN：CR 絶滅寸前種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/shimahukurousub.jpg" alt="シマフクロウ">
+            <a class="animal-detail__classification__link" href="https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Wiki-shimafukurou.jpg">出典：wikipedia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="modal-container">
+      <div id="map__canvas" title="Google Map">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/dataset/shimahukurou.js"></script>
+  <script type="text/javascript" src="../js/mapstyle.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaEgm7qZ7JrZK8V1Ag32PabhfIANq7p64&callback=initMap">
+  </script>
+
+</body>
+
+</html>

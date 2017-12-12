@@ -1,0 +1,80 @@
+<!-- モーダルウィンドウ用HTML　動物ごとに作成 -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>Tanchou</title>
+</head>
+
+<body class="modal-body">
+  <div class="modal-header">
+    <h1 class="modal-header__animal-name">タンチョウ</h1>
+    <div class="modal-header__btn-close" title="閉じるボタン"></div>
+  </div>
+  <div class="modal-hero">
+    <img class="modal-hero__logo" src="../images/tanchou.png" alt="タンチョウシルエット">
+  </div>
+  <div class="animal-detail">
+    <div class="modal-container">
+      <div class="animal-detail__title">
+        <h2>日本最大の野鳥</h2>
+      </div>
+      <div class="row">
+        <div class="col col--12 col-tb--12">
+          <div class="animal-detail__classification">
+            <ul>
+              <li>学名：Grus japonensis</li>
+              <li>分類：ツル目　ツル科</li>
+              <li>IUCN：EN 絶滅危惧種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/tanchousub.jpg" alt="タンチョウ">
+            <a class="animal-detail__classification__link" href="https://pixabay.com/ja/%E3%82%BF%E3%83%B3%E3%83%81%E3%83%A7%E3%82%A6-%E3%82%A6%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3-%E6%BA%80%E5%B7%9E%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3-%E3%81%A4%E3%82%8B%E5%BA%A7japonensis-2091618/">出典：pixabay</a>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--12 col-tblg--6 col-pc--7">
+          <div class="animal-detail__description">
+            <p class="animal-detail__description--p1">
+              全長約1m40cm　翼開帳時約2m40cm 食性は雑食で、甲殻類、貝類、魚類、鳥類の雛、葉や芽、果実など様々。
+            </p>
+            <p class="animal-detail__description--p2">
+              日本では北海道東部に分布。近年は十勝平野西部や根室地区で越冬が確認されている。越冬期には多くの個体が釧路地域に集中する。
+            </p>
+            <p>
+              明治時代に乱獲され、生息地の湿原が開発されたため数が激減。現在は給餌により千羽を超えるまで数が回復した。
+            </p>
+          </div>
+        </div>
+        <div class="col col--12 col-tb--6 col-tblg--6 col-pc--5">
+          <div class="animal-detail__classification--pc">
+            <ul>
+              <li>学名：Grus japonensis</li>
+              <li>分類：ツル目　ツル科</li>
+              <li>IUCN：EN 絶滅危惧種</li>
+            </ul>
+            <img class="animal-detail__classification__img" src="../images/tanchousub.jpg" alt="タンチョウ">
+            <a class="animal-detail__classification__link" href="https://pixabay.com/ja/%E3%82%BF%E3%83%B3%E3%83%81%E3%83%A7%E3%82%A6-%E3%82%A6%E3%82%B9%E3%83%AA%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3-%E6%BA%80%E5%B7%9E%E3%82%AF%E3%83%AC%E3%83%BC%E3%83%B3-%E3%81%A4%E3%82%8B%E5%BA%A7japonensis-2091618/">出典：pixabay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="modal-container">
+      <div id="map__canvas" title="Google Map">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/dataset/tanchou.js"></script>
+  <script type="text/javascript" src="../js/mapstyle.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaEgm7qZ7JrZK8V1Ag32PabhfIANq7p64&callback=initMap">
+  </script>
+
+</body>
+
+</html>
