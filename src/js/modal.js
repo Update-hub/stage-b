@@ -32,7 +32,10 @@ function setcolorbox() {
     iframe: true,
     returnFocus:false,
     innerWidth: modalWidth,   //幅の指定
-    innerHeight: modalHeight //高さの指定
+    innerHeight: modalHeight, //高さの指定
+    onComplete: function() {
+      $.colorbox.position(0);
+  }
   });
 }
 
@@ -49,5 +52,5 @@ $(window).resize(function () {
   }
   timer = setTimeout(function () {
     setcolorbox();
-  }, 200);
+  }, 500);
 });
