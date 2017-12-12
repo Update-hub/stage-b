@@ -10,7 +10,8 @@ function setcolorbox() {
     modalHeight = 1427;
   }
   else {
-    modalWidth = width - 64;
+    width = width - 64;
+    modalWidth = width;
     if (width < 768) {
       modalHeight =1540;
     }
