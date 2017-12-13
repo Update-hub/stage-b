@@ -3,6 +3,7 @@
 //-------------------------
 .modal-body{
   background: $color-main;
+  -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
 .modal-container{
@@ -132,7 +133,8 @@
       width: 200px;
       height: 200px;
       max-width: 100%;
-      box-sizing: border-box;
+      object-fit: cover;
+
     }
     &__link{
       display: block;
