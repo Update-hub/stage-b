@@ -3,7 +3,8 @@
 //-------------------------
 .modal-body{
   background: $color-main;
-  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
 }
 .modal-container{
   box-sizing: border-box;
@@ -69,6 +70,18 @@
     height: 310px;
   }
 }
+.togglediv{
+  display: block;
+  @include tblg(){
+    display: none;
+  }
+  &--pc{
+    display: none;
+    @include tblg(){
+      display: block;
+    }
+  }
+}
 .animal-detail{
   &__title{
     font-size: 18px;
@@ -119,6 +132,9 @@
     &__img{
       width: 200px;
       height: 200px;
+      max-width: 100%;
+      object-fit: cover;
+
     }
     &__link{
       display: block;
