@@ -13,16 +13,16 @@ function setcolorbox() {
     width = width - 64;
     modalWidth = width;
     if (width < 768) {
-      modalHeight =1540;
+      modalHeight = 1540;
     }
-    else if(width <1068){
-      modalHeight =1290;
+    else if (width < 1068) {
+      modalHeight = 1290;
     }
-    else if(width< 1284){
-      modalHeight =1240;
+    else if (width < 1284) {
+      modalHeight = 1240;
     }
-    else{
-      modalHeight =1360;
+    else {
+      modalHeight = 1360;
     }
   }
 
@@ -30,30 +30,23 @@ function setcolorbox() {
   $('.card-wrap-btn').colorbox({
     opacity: 0.7,
     iframe: true,
-    returnFocus:false,
+    returnFocus: false,
     innerWidth: modalWidth,   //幅の指定
     innerHeight: modalHeight, //高さの指定
-    reposition:false,
-    onClose: function(){
-      alert("test");
-    },
-    onComplete: function() {
+    reposition: false,
+    onComplete: function () {
       noscroll();
-  }
+    }
   });
 }
-function noscroll(){
-  $(window).on('touchmove.noScroll', function(e) {
+//モーダル表示されたらスクロール禁止
+function noscroll() {
+  $(window).on('touchmove.noScroll', function (e) {
     e.preventDefault();
   });
 }
-function noscrolloff(){
-  alert("test");
-  $(parent).off('.noScroll');
-}
-
-$(window).bind('cbox_closed', function(){
-  //alert('ColorBoxが閉じられました。');
+//colorboxが閉じられたらスクロール禁止解除
+$(window).bind('cbox_closed', function () {
   $(window).off('.noScroll');
 });
 
@@ -66,7 +59,7 @@ $(window).on('load', function () {
 var timer = false;
 var currentWidth = window.innerWidth;
 $(window).resize(function () {
-  if(currentWidth == window.innerWidth){
+  if (currentWidth == window.innerWidth) {
     return;
   }
   currentWidth = window.innerWidth;
