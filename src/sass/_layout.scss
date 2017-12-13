@@ -25,16 +25,19 @@
 
 //col-offset--2
 //col-tb-offset--2    それぞれの表示時左に数値分カラムのマージンをとる
+@function getColumnWidth($numberOfColumn){
+  @return $numberOfColumn/12 * 100%;
+}
 
 .col {
   padding: 0 8px;
   box-sizing: border-box;
   @for $i from 1 through 12 {
     &--#{$i}{
-      width: calc(#{$i}/12 * 100%);
+      width: getColumnWidth($i);
     }
     &-offset--#{$i} {
-      margin-left: calc(#{$i}/12 * 100%);
+      margin-left: getColumnWidth($i);
     }
   }
   $size-types : (tb: $tablet-width, tblg: $tablet-large-width, pc: $pc-width, pclg: $pc-large-width);
@@ -42,10 +45,10 @@
     @for $i from 1 through 12 {
       @media (min-width: #{$width}){
         &-#{$size-type}--#{$i}{
-          width: calc(#{$i}/12 * 100%);
+          width: getColumnWidth($i);
         }
         &-#{$size-type}-offset--#{$i} {
-          margin-left: calc(#{$i}/12 * 100%);
+          margin-left: getColumnWidth($i);
         }
       }
     }
