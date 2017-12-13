@@ -7,30 +7,27 @@
   width: 100%;
   margin-bottom: 16px;
   box-shadow: $shadow-md;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .card__img-outer {
-  min-height: 200px;
   background-color: $color-accent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 
 .card__img {
-  padding: 0 16px;
-  box-sizing: border-box;
-  min-height: 200px;
+  display: block;
+  height: 200px;
+  margin: 0 auto;
 }
 
 
 .card__description {
   font-weight: 400;
-  padding: 8px;
+  padding: 8px 0;
   font-size: 18px;
   line-height: 40px;
   text-align: center;
   color: $color-accent;
   background-color: $color-main;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
 }
