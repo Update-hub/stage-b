@@ -33,11 +33,29 @@ function setcolorbox() {
     returnFocus:false,
     innerWidth: modalWidth,   //幅の指定
     innerHeight: modalHeight, //高さの指定
+    reposition:false,
+    onClose: function(){
+      alert("test");
+    },
     onComplete: function() {
-      $.colorbox.position(0);
+      noscroll();
   }
   });
 }
+function noscroll(){
+  $(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+  });
+}
+function noscrolloff(){
+  alert("test");
+  $(parent).off('.noScroll');
+}
+
+$(window).bind('cbox_closed', function(){
+  //alert('ColorBoxが閉じられました。');
+  $(window).off('.noScroll');
+});
 
 //ページ読み込み時にcolorbox設定
 $(window).on('load', function () {
@@ -46,11 +64,16 @@ $(window).on('load', function () {
 
 //リサイズ完了時にcolorbox設定
 var timer = false;
+var currentWidth = window.innerWidth;
 $(window).resize(function () {
+  if(currentWidth == window.innerWidth){
+    return;
+  }
+  currentWidth = window.innerWidth;
   if (timer !== false) {
     clearTimeout(timer);
   }
   timer = setTimeout(function () {
     setcolorbox();
-  }, 500);
+  }, 200);
 });
