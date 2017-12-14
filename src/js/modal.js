@@ -7,14 +7,12 @@ function setcolorbox() {
   var width = window.innerWidth;
   if (width < 600) {
     modalWidth = width - 32;
-    //modalHeight = 1427;
     modalHeight = 1600;
   }
   else {
     width = width - 64;
     modalWidth = width;
     if (width < 768) {
-      //modalHeight = 1540;
       modalHeight = 1800;
     }
     else if (width < 1068) {
@@ -28,7 +26,7 @@ function setcolorbox() {
       modalHeight = 1360;
     }
   }
-  
+
   //インラインフレームにモーダルを表示
   $('.card-wrap-btn').colorbox({
     opacity: 0.7,
@@ -39,9 +37,9 @@ function setcolorbox() {
     reposition: false,
     onComplete: function () {
       noscroll();
-      setTimeout(function(){
+      setTimeout(function () {
         $.colorbox.position(0);
-    },200);
+      }, 200);
     }
   });
 }
