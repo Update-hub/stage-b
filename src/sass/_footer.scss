@@ -1,0 +1,13 @@
+.footer{
+  background-color: $color-main;
+
+  &__wrapper{
+    height: 56px;
+  }
+
+  &__copyright{
+    padding: 16px;
+    font-size:14px;
+    line-height:24px;
+  }
+}

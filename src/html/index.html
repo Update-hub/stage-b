@@ -3,14 +3,22 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-      'gtm.start':
-        new Date().getTime(), event: 'gtm.js'    
-}); var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MDLND3V');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MDLND3V');
+  </script>
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +27,7 @@
   <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./js/colorbox/colorbox.css" media="screen" />
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="../images/favicon01.ico">  
+  <link rel="icon" href="../images/favicon01.ico">
   <title>Red List</title>
 </head>
 
@@ -199,6 +207,14 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <p class="footer__copyright">© Deer, Inc.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./js/slick/slick.min.js"></script>
