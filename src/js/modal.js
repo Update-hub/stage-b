@@ -24,6 +24,7 @@ function setcolorbox() {
       modalHeight = 1240;
     }
     else {
+      modalWidth = 1284;
       modalHeight = 1360;
     }
   }
