@@ -13,7 +13,8 @@
 
 ### 公開サーバー
 
-https://stage-b.firebaseapp.com/
+https://redlist-jp.tk/
+https://stage-b-afcdb.firebaseapp.com/
 
 ## スケジュール
 
