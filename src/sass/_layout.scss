@@ -30,7 +30,7 @@
 }
 
 .col {
-  padding: 0 8px;
+  padding: 0 16px;
   box-sizing: border-box;
   @for $i from 1 through 12 {
     &--#{$i}{
