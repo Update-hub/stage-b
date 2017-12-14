@@ -31,3 +31,7 @@
   color: $color-accent;
   background-color: $color-main;
 }
+
+.card:hover {
+  box-shadow: $shadow2-md;
+}
