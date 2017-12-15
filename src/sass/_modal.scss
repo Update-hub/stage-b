@@ -3,8 +3,8 @@
 //-------------------------
 .modal-body{
   background: $color-main;
-  -webkit-overflow-scrolling: touch;
-  overflow: auto;
+  //-webkit-overflow-scrolling: touch;
+  overflow:auto;
 }
 .modal-container{
   box-sizing: border-box;
@@ -152,4 +152,21 @@
       }
     }
   }
+}
+.map {
+  padding-bottom: 40px;
+  @include tblg(){
+    padding-bottom: 80px;
+  }
+}
+#background-wrap{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling:touch;
+  transform: translate3d(0,0,0);
+}
+#forIos-wrap{
+  height: 100vh;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
