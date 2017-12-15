@@ -144,9 +144,6 @@
     @include tb(){
       padding-bottom: 32px;
     }
-    // @include tblg(){
-    //   // display: none;
-    // }
     &__img{
       width: 200px;
       height: 200px;
@@ -158,14 +155,5 @@
     &__link{
       display: block;
     }
-    // &--pc{
-    //   text-align: center;
-    //   padding-bottom: 8px;
-    //   display: none;
-    //   @include tblg(){
-    //     display: block;
-    //     padding-bottom: 32px;
-    //   }
-    // }
   }
 }
