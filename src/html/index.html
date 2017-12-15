@@ -38,10 +38,14 @@
         各動物のカードを選択するとその動物についての情報が表示されます。</p>
     </div>
   </div>
+  <div id="js-btn-cr" style="background: #070">cr</div>
+  <div id="js-btn-none" style="background: #007">none</div>
+  <div id="js-btn-en" style="background: #070">en</div>
+  <div id="js-btn-cr-en" style="background: #007">cr-en</div>
 
   <div class="container cards-list">
     <div class="row js-carousel">
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0 js-card js-card--cr">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/aoumigame.html">
             <div class="card__img-outer">
@@ -53,7 +57,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0 js-card js-card--en">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/kuromaguro.html">
             <div class="card__img-outer">
@@ -65,7 +69,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/ezookojo.html">
             <div class="card__img-outer">
@@ -77,7 +81,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/iriomoteyamaneko.html">
             <div class="card__img-outer">
@@ -89,7 +93,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1 js-card js-card--CR">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/ishikawagaeru.html">
             <div class="card__img-outer">
@@ -101,7 +105,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/kunimasu.html">
             <div class="card__img-outer">
@@ -113,7 +117,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/kuroiwatokagemodoki.html">
             <div class="card__img-outer">
@@ -125,7 +129,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/nihonunagi.html">
             <div class="card__img-outer">
@@ -137,7 +141,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/oowashi.html">
             <div class="card__img-outer">
@@ -149,7 +153,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/tanchou.html">
             <div class="card__img-outer">
@@ -161,7 +165,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/shimahukurou.html">
             <div class="card__img-outer">
@@ -173,7 +177,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2 js-card">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/ezohiguma.html">
             <div class="card__img-outer">
@@ -192,6 +196,7 @@
   <script src="./js/slick/slick.min.js"></script>
   <script src="./js/colorbox/jquery.colorbox-min.js"></script>
   <script src="./js/carousel.js"></script>
+  <script src="./js/list-filter.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
