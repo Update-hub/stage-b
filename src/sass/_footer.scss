@@ -10,4 +10,15 @@
     font-size:14px;
     line-height:24px;
   }
+
+  &__social{
+    display: flex;
+    flex-direction: row-reverse;
+    &Twitter{
+      padding: 20px 16px 12px 8px;
+    }
+    &Facebook{
+      padding: 16px 8px 16px 16px;
+    }
+  }
 }
