@@ -1,4 +1,6 @@
-//ボタン追加時はここに追記する。複数選択時は中に配列を作る。
+//ボタン追加時はこの下のcategoriesOfRedlistに追記する。複数選択時は中に配列を作る。
+//ボタンのidにはjs-filter-btn-○○という形で入れる。
+//複数選択の際はjs-filter-btn-○○-○○、配列に入れる際はid名に入れた順に入れる。
 const categoriesOfRedlist = ['none', 'cr', 'en', ['cr', 'en']];
 
 $(function () {
@@ -16,12 +18,12 @@ $(function () {
  */
 function getIdName(category) {
   if (Array.isArray(category)) {
-    idName = 'js-btn';
+    idName = 'js-filter-btn';
     category.forEach(aCategory => {
       idName += `-${aCategory}`;
     });
   } else {
-    idName = `js-btn-${category}`;
+    idName = `js-filter-btn-${category}`;
   }
   return idName;
 }
