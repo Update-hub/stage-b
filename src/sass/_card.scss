@@ -12,7 +12,7 @@
 }
 
 .card__img-outer {
-  background-color: $color-accent;
+  background-color: $color-main;
 }
 
 .card__img {
@@ -34,4 +34,8 @@
     font-size: 14px;
     line-height: 16px;
   }
+}
+
+.card:hover {
+  box-shadow: $shadow2-md;
 }
