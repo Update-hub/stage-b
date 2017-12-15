@@ -21,7 +21,7 @@
   </script>
   <!-- End Google Tag Manager -->
 
-  <!-- facebook social btn -->
+  <!-- facebook -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -30,13 +30,13 @@
     js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-  <!-- End facebook social btn -->
+  <!-- End facebook -->
 
-  <!-- twitter social btn -->
+  <!-- twitter -->
   <script>
       window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
   </script>
-  <!-- End Twitter social btn -->
+  <!-- End twitter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -46,7 +46,6 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="../images/favicon01.ico">
   <title>Red List</title>
-
 </head>
 
 <body>
@@ -227,18 +226,20 @@
   </div>
 
   <footer class="footer">
-    <div class="container row js-carousel">
-      <div class="footer__wrapper col col--6 col-tb--6 col-tblg--6 col-pc--6 js-carousel-0">
-        <p class="footer__copyright">© Deer, Inc.</p>
-      </div>
-      <div class="footer__social col col--6 col-tb--6 col-tblg--6 col-pc--6 js-carousel-0">
-        <div class="footer__socialTwitter">
-          <a class="twitter-share-button" href="https://twitter.com/share" data-dnt="true">Tweet</a>
+    <div class="container">
+      <div class="row">
+        <div class="footer__wrapper-copyright col--6">
+          <p class="footer__logo">© Deer, Inc.</p>
         </div>
-        <div class="footer__socialFacebook">
-          <div class="fb-like" data-href="http://syncer.jp" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
-        </div>    
-      </div>  
+        <div class="footer__social col--6">
+          <div class="footer__socialTwitter">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-dnt="true">Tweet</a>
+          </div>
+          <div class="footer__socialFacebook">
+            <div class="fb-like" data-href="http://syncer.jp" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+          </div>    
+        </div> 
+      </div> 
     </div>
   </footer>
 
