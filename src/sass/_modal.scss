@@ -40,25 +40,42 @@
   &__animal-name{
     text-align: center;
     color: $color-main;
-    padding: 36px 0;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: bold;
+    font-size: 40px;
+    line-height: 72px;
+    font-weight: 400;
     @include tb(){
-      font-size: 32px;
-      line-height: 48px;
+      font-size: 40px;
+      line-height: 64px;
+      padding:8px 0 0;
     }
     @include tblg(){
-      padding: 24px 0;
-      line-height: 72px;
+      padding: 0;
       font-size: 48px;
+      line-height: 72px;
     }
+    //ここから英語表記//
+    &--eng {
+      text-align: center;
+      color: $color-main;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 400;
+      @include tb(){
+        font-size: 24px;
+        line-height: 32px;
+      }
+      @include tblg(){
+        font-size: 32px;
+        line-height: 24px;
+      }
+    }
+    //ここまで英語表記//
   }
 }
 .modal-hero{
   margin: 0 auto;
   margin-bottom: 40px;
-  background: $color-accent;
+  background: $color-main;
   border-radius: 3px;
   width: 264px;
   height: 264px;

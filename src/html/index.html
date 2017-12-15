@@ -3,15 +3,40 @@
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-      'gtm.start':
-        new Date().getTime(), event: 'gtm.js'    
-}); var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MDLND3V');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MDLND3V');
+  </script>
   <!-- End Google Tag Manager -->
+
+  <!-- facebook -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- End facebook -->
+
+  <!-- twitter -->
+  <script>
+      window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+  </script>
+  <!-- End twitter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +44,7 @@
   <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./js/colorbox/colorbox.css" media="screen" />
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="../images/favicon.ico">  
+  <link rel="icon" href="../images/favicon01.ico">
   <title>Red List</title>
 </head>
 
@@ -52,7 +77,8 @@
               <img class="card__img" src="../images/aoumigame.png" alt="">
             </div>
             <div class="card__description">
-              <h2>AoUmigame</h2>
+              <h2>アオウミガメ</h2>
+              <h3 class="card__description--eng">AoUmigame</h3>
             </div>
           </a>
         </div>
@@ -64,7 +90,8 @@
               <img class="card__img" src="../images/kuromaguro.png" alt="">
             </div>
             <div class="card__description">
-              <h2>KuroMaguro</h2>
+              <h2>クロマグロ</h2>
+              <h3 class="card__description--eng">KuroMaguro</h3>
             </div>
           </a>
         </div>
@@ -76,7 +103,8 @@
               <img class="card__img" src="../images/ezookojo.png" alt="">
             </div>
             <div class="card__description">
-              <h2>EzoOkojo</h2>
+              <h2>エゾオコジョ</h2>
+              <h3 class="card__description--eng">EzoOkojo</h3>
             </div>
           </a>
         </div>
@@ -88,7 +116,8 @@
               <img class="card__img" src="../images/iriomoteyamaneko.png" alt="">
             </div>
             <div class="card__description">
-              <h2>IriomoteYamaneko</h2>
+              <h2>イリオモテヤマネコ</h2>
+              <h3 class="card__description--eng">IriomoteYamaneko</h3>
             </div>
           </a>
         </div>
@@ -100,7 +129,8 @@
               <img class="card__img" src="../images/ishikawagaeru.png" alt="">
             </div>
             <div class="card__description">
-              <h2>IshikawaGaeru</h2>
+              <h2>イシカワガエル</h2>
+              <h3 class="card__description--eng">IshikawaGaeru</h3>
             </div>
           </a>
         </div>
@@ -112,7 +142,8 @@
               <img class="card__img" src="../images/kunimasu.png" alt="">
             </div>
             <div class="card__description">
-              <h2>KuniMasu</h2>
+              <h2>クニマス</h2>
+              <h3 class="card__description--eng">KuniMasu</h3>
             </div>
           </a>
         </div>
@@ -124,7 +155,8 @@
               <img class="card__img" src="../images/kuroiwatokagemodoki.png" alt="">
             </div>
             <div class="card__description">
-              <h2>KuroiwaTokagemodoki</h2>
+              <h2>クロイワトカゲモドキ</h2>
+              <h3 class="card__description--eng">KuroiwaTokagemodoki</h3>
             </div>
           </a>
         </div>
@@ -136,7 +168,8 @@
               <img class="card__img" src="../images/nihonunagi.png" alt="">
             </div>
             <div class="card__description">
-              <h2>NihonUnagi</h2>
+              <h2>ニホンウナギ</h2>
+              <h3 class="card__description--eng">NihonUnagi</h3>
             </div>
           </a>
         </div>
@@ -148,7 +181,8 @@
               <img class="card__img" src="../images/oowashi.png" alt="">
             </div>
             <div class="card__description">
-              <h2>OoWashi</h2>
+              <h2>オオワシ</h2>
+              <h3 class="card__description--eng">OoWashi</h3>
             </div>
           </a>
         </div>
@@ -160,7 +194,8 @@
               <img class="card__img" src="../images/tanchou.png" alt="">
             </div>
             <div class="card__description">
-              <h2>Tanchou</h2>
+              <h2>タンチョウ</h2>
+              <h3 class="card__description--eng">Tanchou</h3>
             </div>
           </a>
         </div>
@@ -172,7 +207,8 @@
               <img class="card__img" src="../images/shimahukurou.png" alt="">
             </div>
             <div class="card__description">
-              <h2>ShimaFukurou</h2>
+              <h2>シマフクロウ</h2>
+              <h3 class="card__description--eng">ShimaFukurou</h3>
             </div>
           </a>
         </div>
@@ -184,13 +220,32 @@
               <img class="card__img" src="../images/ezohiguma.png" alt="">
             </div>
             <div class="card__description">
-              <h2>EzoHiguma</h2>
+              <h2>エゾヒグマ</h2>
+              <h3 class="card__description--eng">EzoHiguma</h3>
             </div>
           </a>
         </div>
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer__wrapper-copyright col--6">
+          <p class="footer__logo">© Deer, Inc.</p>
+        </div>
+        <div class="footer__social col--6">
+          <div class="footer__socialTwitter">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-dnt="true">Tweet</a>
+          </div>
+          <div class="footer__socialFacebook">
+            <div class="fb-like" data-href="http://syncer.jp" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+          </div>    
+        </div> 
+      </div> 
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./js/slick/slick.min.js"></script>
