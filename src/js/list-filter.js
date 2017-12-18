@@ -1,8 +1,18 @@
 //ボタン追加時はこの下のcategoriesOfRedlistに追記する。複数選択時は中に配列を作る。
 //ボタンのidにはjs-filter-btn-○○という形で入れる。
 //複数選択の際はjs-filter-btn-○○-○○、配列に入れる際はid名に入れた順に入れる。
-const categoriesOfRedlist = ['none', 'cr', 'en', ['cr', 'en']];
+//フィルタリングされる側のクラスにはjs-cardとjs-card--○○を付ける。
+const categoriesOfRedlist = [
+  'none',
+  'cr',
+  'en',
+  ['cr', 'en']
+];
 
+
+/* ---------------------------------------------------------------------------------------------------------------
+   実行処理
+--------------------------------------------------------------------------------------------------------------- */
 $(function () {
   let filter = new FilterOfCategory();
   categoriesOfRedlist.forEach(category => {
@@ -13,14 +23,18 @@ $(function () {
   });
 });
 
+
+/* ---------------------------------------------------------------------------------------------------------------
+   クラス・関数
+--------------------------------------------------------------------------------------------------------------- */
 /**
  * @param  {string} category
  */
 function getIdName(category) {
   if (Array.isArray(category)) {
     idName = 'js-filter-btn';
-    category.forEach(aCategory => {
-      idName += `-${aCategory}`;
+    category.forEach(theCategory => {
+      idName += `-${theCategory}`;
     });
   } else {
     idName = `js-filter-btn-${category}`;
@@ -30,7 +44,7 @@ function getIdName(category) {
 
 class FilterOfCategory {
   constructor() {
-    this.selectedCategory = null;
+    this.selectedCategory = 'none';
   }
   /**
    * @param  {string} category
@@ -55,8 +69,8 @@ class FilterOfCategory {
   changeFilter(category) {
     if (Array.isArray(category)) {
       $('.js-card').hide();
-      category.forEach(aCategory => {
-        $(`.js-card--${aCategory}`).show();
+      category.forEach(theCategory => {
+        $(`.js-card--${theCategory}`).show();
       });
     } else {
       $('.js-card').hide();
