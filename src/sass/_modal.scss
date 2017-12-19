@@ -118,23 +118,22 @@
     }
   }
   &__description{
-      padding-bottom: 8px;
-      font-size: 14px;
-      line-height: 24px;
+      margin-bottom: 16px;
     @include tb(){
-      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
+  }
+  &__description-line{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    @include tb(){
       font-size: 16px;
       line-height: 24px;
     }
     @include pclg(){
       font-size: 18px;
       line-height: 32px;
-    }
-    &--p1{
-      padding-bottom: 16px;
-    }
-    &--p2{
-      padding-bottom: 16px;
     }
   }
   &__classification{
@@ -144,9 +143,6 @@
       box-sizing: border-box;
     @include tb(){
       padding-bottom: 32px;
-    }
-    @include tblg(){
-      display: none;
     }
     &__img{
       width: 200px;
@@ -158,15 +154,6 @@
     }
     &__link{
       display: block;
-    }
-    &--pc{
-      text-align: center;
-      padding-bottom: 8px;
-      display: none;
-      @include tblg(){
-        display: block;
-        padding-bottom: 32px;
-      }
     }
   }
 }
