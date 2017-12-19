@@ -6,7 +6,13 @@ const categoriesOfRedlist = [
   'none',
   'cr',
   'en',
-  ['cr', 'en']
+  ['cr', 'en'],
+  'ex',
+  'ew',
+  'vu',
+  'nt',
+  'dd',
+  'lp'
 ];
 
 
@@ -16,8 +22,10 @@ const categoriesOfRedlist = [
 $(function () {
   let filter = new FilterOfCategory();
   categoriesOfRedlist.forEach(category => {
-    document.getElementById(getIdName(category))
+    let id = getIdName(category);
+    document.getElementById(id)
       .addEventListener('click', () => {
+        setCurrentFilter(id);
         filter.clickButton(category);
       });
   });
@@ -31,6 +39,7 @@ $(function () {
  * @param  {string} category
  */
 function getIdName(category) {
+  let idName;
   if (Array.isArray(category)) {
     idName = 'js-filter-btn';
     category.forEach(theCategory => {
@@ -40,6 +49,11 @@ function getIdName(category) {
     idName = `js-filter-btn-${category}`;
   }
   return idName;
+}
+
+function setCurrentFilter(id){
+  $('.js-filter-current').removeClass('js-filter-current');
+  $('#'+id).addClass('js-filter-current');
 }
 
 class FilterOfCategory {

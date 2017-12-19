@@ -24,17 +24,17 @@
   <!-- facebook -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   <!-- End facebook -->
 
   <!-- twitter -->
   <script>
-      window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+    window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
   </script>
   <!-- End twitter -->
   <meta charset="UTF-8">
@@ -62,11 +62,40 @@
     </div>
   </div>
 
-  <!-- 仮のボタン -->
-  <div id="js-filter-btn-cr" style="background: #070">cr</div>
-  <div id="js-filter-btn-none" style="background: #007">none</div>
-  <div id="js-filter-btn-en" style="background: #070">en</div>
-  <div id="js-filter-btn-cr-en" style="background: #007">cr-en</div>
+  <div class="container filter-btns-area">
+    <div class="row">
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-none" class="filter-btn js-filter-current">全て</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-ex" class="filter-btn">絶滅</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-ew" class="filter-btn">野生絶滅</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-cr-en" class="filter-btn">絶滅危惧Ｉ類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-cr" class="filter-btn">絶滅危惧ＩＡ類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-en" class="filter-btn">絶滅危惧ＩＢ類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-vu" class="filter-btn">絶滅危惧II類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-nt" class="filter-btn">準絶滅危惧</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-dd" class="filter-btn">情報不足</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-lp" class="filter-btn">地域個体群</div>
+      </div>
+    </div>
+  </div>
 
   <div class="container cards-list">
     <div class="row">
@@ -241,9 +270,9 @@
           </div>
           <div class="footer__socialFacebook">
             <div class="fb-like" data-href="http://syncer.jp" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-          </div>    
-        </div> 
-      </div> 
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
