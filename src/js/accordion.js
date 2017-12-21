@@ -5,9 +5,9 @@ $(function () {
   });
   //コンテンツを隠す
   $('.filter__content').hide();
-  //ボタンが押されたら
+  //.filter__btnが押されたら
   $('.filter__btn').click(function () {
-    //開閉し、次の.filter__contentに処理を引き継ぐ
+    //.filter__contentを開閉
     $(this).next('.filter__content').slideToggle('slow');
   });
 });
