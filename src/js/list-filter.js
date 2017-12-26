@@ -14,6 +14,18 @@ const categoriesOfRedlist = [
   'dd',
   'lp'
 ];
+const categoriesDescription = {
+  all:'すべてを表示',
+  cr:'国内ではすでに絶滅したと考えられる種',
+  en:'IA種ほどではないが、近い将来における野生での絶滅の危険性が極めて高いもの',
+  cren:'絶滅の危機に瀕している種',
+  ex:'国内ではすでに絶滅したと考えられる種',
+  ew:'飼育・栽培下でのみ存続している種',
+  vu:'絶滅の危険が増大している種',
+  nt:'絶滅危険度は小さいが、生息条件の変化によっては絶滅危惧に移行する可能性がある種',
+  dd:'評価するだけの情報が不足している種',
+  lp:'地域的に孤立している個体群で、絶滅の恐れが高いもの'
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------------
@@ -26,6 +38,7 @@ $(function () {
     document.getElementById(id)
       .addEventListener('click', () => {
         setCurrentFilter(id);
+        $('.filter-description').text(getIdDescription(id));
         filter.clickButton(category);
       });
   });
@@ -54,6 +67,15 @@ function getIdName(category) {
 function setCurrentFilter(id){
   $('.js-filter-current').removeClass('js-filter-current');
   $('#'+id).addClass('js-filter-current');
+}
+
+function getIdDescription(id){
+  let trimId = id.substr(14).replace('-','');
+  let idDescription;
+  if(id!=null){
+    idDescription = categoriesDescription[trimId];
+  }
+  return idDescription;
 }
 
 class FilterOfCategory {
