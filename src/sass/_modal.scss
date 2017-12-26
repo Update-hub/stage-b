@@ -1,159 +1,167 @@
 //-------------------------
 //モーダルページ内設定
 //-------------------------
-.modal-body{
+.modal-body {
   background: $color-main;
   -webkit-overflow-scrolling: touch;
   overflow: auto;
 }
-.modal-container{
+
+.modal-container {
   box-sizing: border-box;
   padding: 0 8px;
-  @include tb(){
+  @include tb() {
     padding: 0 16px;
   }
   @include pc() {
     padding: 0 32px;
   }
 }
-.modal-header{
+
+.modal-header {
   background: $color-accent;
   position: relative;
   height: 120px;
   margin-bottom: 40px;
-  @include tb(){
+  @include tb() {
     margin-bottom: 80px;
   }
-  &__btn-close{
+  &__btn-close {
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 10px;
     background-image: url(../images/close.png);
     background-size: cover;
     width: 40px;
     height: 40px;
     cursor: pointer;
-    &:hover{
+    &:hover {
       opacity: 0.7;
     }
   }
-  &__animal-name{
+  &__animal-name {
     text-align: center;
     color: $color-main;
     font-size: 40px;
     line-height: 72px;
     font-weight: 400;
-    @include tb(){
+    @include tb() {
       font-size: 40px;
       line-height: 64px;
-      padding:8px 0 0;
+      padding: 8px 0 0;
     }
-    @include tblg(){
+    @include tblg() {
       padding: 0;
       font-size: 48px;
       line-height: 72px;
-    }
-    //ここから英語表記//
+    } //ここから英語表記//
     &--eng {
       text-align: center;
       color: $color-main;
       font-size: 24px;
       line-height: 24px;
       font-weight: 400;
-      @include tb(){
+      @include tb() {
         font-size: 24px;
         line-height: 32px;
       }
-      @include tblg(){
+      @include tblg() {
         font-size: 32px;
         line-height: 24px;
       }
-    }
-    //ここまで英語表記//
+    } //ここまで英語表記//
   }
 }
-.modal-hero{
+
+.modal-hero {
   margin: 0 auto;
   margin-bottom: 40px;
   background: $color-main;
   border-radius: 3px;
   width: 264px;
   height: 264px;
-  @include tb(){
+  @include tb() {
     margin-bottom: 80px;
     width: 256px;
     height: 256px;
   }
-  @include pclg(){
+  @include pclg() {
     width: 310px;
     height: 310px;
   }
 }
-.togglediv{
+
+.togglediv {
   display: block;
-  @include tblg(){
+  @include tblg() {
     display: none;
   }
-  &--pc{
+  &--pc {
     display: none;
-    @include tblg(){
+    @include tblg() {
       display: block;
     }
   }
 }
-.animal-detail{
-  &__title{
+
+.animal-detail {
+  &__title {
     font-size: 18px;
     line-height: 29px;
     border-bottom: 3px solid $color-accent;
     margin-bottom: 16px;
-    @include tb(){
+    @include tb() {
       margin-bottom: 32px;
       font-size: 24px;
-      line-height:37px;
+      line-height: 37px;
     }
-    @include tblg(){
+    @include tblg() {
       font-size: 32px;
       line-height: 45px;
     }
   }
-  &__description{
-      margin-bottom: 16px;
-    @include tb(){
+  &__description {
+    margin-bottom: 16px;
+    @include tb() {
       margin-bottom: 32px;
     }
   }
-  &__description-line{
+  &__description-line {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 16px;
-    @include tb(){
+    @include tb() {
       font-size: 16px;
       line-height: 24px;
     }
-    @include pclg(){
+    @include pclg() {
       font-size: 18px;
       line-height: 32px;
     }
   }
-  &__classification{
-      text-align: center;
-      display: block;
-      padding-bottom: 8px;
-      box-sizing: border-box;
-    @include tb(){
+  &__classification {
+    text-align: center;
+    display: block;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    @include tb() {
       padding-bottom: 32px;
     }
-    &__img{
+    &__img {
       width: 200px;
       height: 200px;
       max-width: 100%;
-      object-fit: scale-down;
-      // ofi.min.js の処理
+      object-fit: scale-down; // ofi.min.js の処理
       font-family: 'object-fit: scale-down;'
     }
-    &__link{
+    &__link {
       display: block;
     }
+  }
+}
+.map {
+  margin-bottom: 40px;
+  @include tb() {
+    margin-bottom: 80px;
   }
 }
