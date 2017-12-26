@@ -24,24 +24,22 @@
   <!-- facebook -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   <!-- End facebook -->
 
   <!-- twitter -->
   <script>
-      window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+    window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
   </script>
   <!-- End twitter -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="./js/colorbox/colorbox.css" media="screen" />
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="../images/favicon01.ico">
@@ -64,9 +62,44 @@
     </div>
   </div>
 
+  <div class="container filter-btns-area">
+    <div class="row">
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-none" class="filter-btn js-filter-current">全て</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-ex" class="filter-btn">絶滅</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-ew" class="filter-btn">野生絶滅</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-cr-en" class="filter-btn">絶滅危惧Ｉ類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-cr" class="filter-btn">絶滅危惧ＩＡ類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-en" class="filter-btn">絶滅危惧ＩＢ類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-vu" class="filter-btn">絶滅危惧II類</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-nt" class="filter-btn">準絶滅危惧</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-dd" class="filter-btn">情報不足</div>
+      </div>
+      <div class="col col--6 col-tb--4 col-tblg--3 wrap-filter-btn">
+        <div id="js-filter-btn-lp" class="filter-btn">地域個体群</div>
+      </div>
+    </div>
+  </div>
+
   <div class="container cards-list">
-    <div class="row js-carousel">
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+    <div class="row">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--cr">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/aoumigame.html">
             <div class="card__img-outer">
@@ -79,7 +112,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--en">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/kuromaguro.html">
             <div class="card__img-outer">
@@ -92,7 +125,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--nt">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/ezookojo.html">
             <div class="card__img-outer">
@@ -105,7 +138,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-0">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--cr">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/iriomoteyamaneko.html">
             <div class="card__img-outer">
@@ -118,7 +151,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--en">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/ishikawagaeru.html">
             <div class="card__img-outer">
@@ -131,7 +164,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--ew">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/kunimasu.html">
             <div class="card__img-outer">
@@ -144,7 +177,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--vu">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/kuroiwatokagemodoki.html">
             <div class="card__img-outer">
@@ -157,7 +190,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-1">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--en">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/nihonunagi.html">
             <div class="card__img-outer">
@@ -170,7 +203,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--vu">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/oowashi.html">
             <div class="card__img-outer">
@@ -183,7 +216,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--en">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/tanchou.html">
             <div class="card__img-outer">
@@ -196,7 +229,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--cr">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/shimahukurou.html">
             <div class="card__img-outer">
@@ -209,7 +242,7 @@
           </a>
         </div>
       </div>
-      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-carousel-2">
+      <div class="col col--12 col-tb--6 col-tblg--4 col-pc--3 js-card js-card--lp">
         <div class="card">
           <a class="card-wrap-btn" href="./animals/ezohiguma.html">
             <div class="card__img-outer">
@@ -237,16 +270,15 @@
           </div>
           <div class="footer__socialFacebook">
             <div class="fb-like" data-href="http://syncer.jp" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-          </div>    
-        </div> 
-      </div> 
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./js/slick/slick.min.js"></script>
   <script src="./js/colorbox/jquery.colorbox-min.js"></script>
-  <script src="./js/carousel.js"></script>
+  <script src="./js/list-filter.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

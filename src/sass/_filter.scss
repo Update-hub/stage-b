@@ -1,0 +1,54 @@
+.filter-btns-area{
+  margin-top: 32px;//containerと一緒に使うためバラバラに
+  margin-bottom: 16px;//filter-btnのmargin-bottom分少なく
+}
+
+.wrap-filter-btn{
+  &:nth-child(even){
+    .filter-btn{
+      margin-left: -12px;
+      @include tb(){
+        margin-left: 0;
+      }
+    }
+  }
+  &:nth-child(odd){
+    .filter-btn{
+      margin-right: -12px;
+      @include tb(){
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.filter-btn{
+  $height: 32px;
+  height: $height;
+  border-radius: $height/2;
+  line-height: $height;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  background-color: $color-main;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  box-shadow: $shadow-md;
+  cursor: pointer;
+  
+  @include tb(){
+    $height: 40px;
+    height: $height;
+    border-radius: $height/2;
+    line-height: $height;
+    font-size: 16px;
+  }
+  &:hover {
+    box-shadow: $shadow2-md;
+  }
+}
+
+.js-filter-current{
+  background-color: $color-accent;
+  color: $color-main;
+}
