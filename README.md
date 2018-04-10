@@ -13,7 +13,7 @@
 
 ### 公開サーバー
 
-https://update-hub.github.io/stage-b-1st/
+https://update-hub.github.io/stage-b/
 
 ## スケジュール
 
