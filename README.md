@@ -13,7 +13,7 @@
 
 ### 公開サーバー
 
-https://stage-b.firebaseapp.com/
+https://update-hub.github.io/stage-b-1st/
 
 ## スケジュール
 
