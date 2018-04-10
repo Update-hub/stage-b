@@ -2,10 +2,7 @@
 
 let gulp = require('gulp');
 let sass = require('gulp-sass');
-let imagemin = require('gulp-imagemin');
 let browserSync = require('browser-sync').create();
-let pngquant = require('imagemin-pngquant');
-let mozjpeg = require('imagemin-mozjpeg');
 let watch = require('gulp-watch');
 let plumber = require('gulp-plumber');
 let cssmin = require('gulp-cssmin');
@@ -14,7 +11,7 @@ let cssmin = require('gulp-cssmin');
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: './dist',
+      baseDir: './docs',
     },
   });
 });
@@ -24,33 +21,22 @@ gulp.task('sass', function() {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(cssmin())
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('imagemin', function() {
   return gulp.src('./src/images/**/*')
-    .pipe(imagemin([
-      pngquant({
-        quality: '65-80',
-        speed: 1,
-      }),
-      mozjpeg({
-        quality: 80,
-      }),
-      imagemin.svgo(),
-      imagemin.gifsicle(),
-    ]))
-    .pipe(gulp.dest('./dist/images'));
+    .pipe(gulp.dest('./docs/images'));
 });
 
 gulp.task('js', function() {
   return gulp.src('./src/js/**/*')
-    .pipe(gulp.dest('./dist/js'));
+    .pipe(gulp.dest('./docs/js'));
 });
 
 gulp.task('html', function() {
   return gulp.src('./src/html/**/*.html')
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('watch', ['js','sass','imagemin','html'],  function() {
@@ -69,7 +55,7 @@ gulp.task('watch', ['js','sass','imagemin','html'],  function() {
     gulp.start('html');
   });
 
-  watch(['./dist/**/*'], function() {
+  watch(['./docs/**/*'], function() {
     browserSync.reload();
   });
 });
